@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FAFB0CB7-7922-4BDD-AF3A-EACCD37D431C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StateTemplateV5Beta</RootNamespace>
+    <AssemblyName>StateTemplateV5Beta</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\StateTemplate\css\cagov.core.css" />
+    <Content Include="Content\StateTemplate\css\cagov.font-only.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
+    <Content Include="Content\StateTemplate\favicon.ico" />
+    <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
+    <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\StateTemplate\images\banner\banner-blank.png" />
+    <Content Include="Content\StateTemplate\images\banner\banner-gal.png" />
+    <Content Include="Content\StateTemplate\images\banner\banner-guy.png" />
+    <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Blue.svg" />
+    <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Gold.svg" />
+    <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-White.svg" />
+    <Content Include="Content\StateTemplate\images\ca-logo.png" />
+    <Content Include="Content\StateTemplate\images\fancybox\blank.gif" />
+    <Content Include="Content\StateTemplate\images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\StateTemplate\images\fancybox\fancybox_loading.gif" />
+    <Content Include="Content\StateTemplate\images\fancybox\fancybox_overlay.png" />
+    <Content Include="Content\StateTemplate\images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\StateTemplate\images\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\StateTemplate\images\favicon.ico" />
+    <Content Include="Content\StateTemplate\images\template-logo.png" />
+    <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-114x114.png" />
+    <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-144x144.png" />
+    <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-57x57.png" />
+    <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-72x72.png" />
+    <Content Include="Content\StateTemplate\images\template2014\bullet-blue-disc-open.png" />
+    <Content Include="Content\StateTemplate\images\template2014\bullet-blue-disc.png" />
+    <Content Include="Content\StateTemplate\images\template2014\bullet-gray-arrow.png" />
+    <Content Include="Content\StateTemplate\images\template2014\clear.gif" />
+    <Content Include="Content\StateTemplate\images\template2014\header-ca.gov.png" />
+    <Content Include="Content\StateTemplate\images\template2014\header-organization.png" />
+    <Content Include="Content\StateTemplate\images\template2014\nav-down-arrow.png" />
+    <Content Include="Content\StateTemplate\images\template2014\nav-shadow.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\2column-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\body-background.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\footer-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\header-background.jpg" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\megadropdown-ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\panel-standout-triangle.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\ribbon-home.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\ribbon-two-col.png" />
+    <Content Include="Content\StateTemplate\images\template2014\oceanside\ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\2column-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\body-background.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\footer-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\header-background.jpg" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\megadropdown-ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\panel-standout-triangle.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\ribbon-home.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\ribbon-two-col.png" />
+    <Content Include="Content\StateTemplate\images\template2014\orangecounty\ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\2column-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\body-background.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\footer-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\header-background.jpg" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\megadropdown-ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\panel-standout-triangle.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\ribbon-home.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\ribbon-two-col.png" />
+    <Content Include="Content\StateTemplate\images\template2014\pasorobles\ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\2column-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\body-background.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\footer-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\header-background.jpg" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\megadropdown-ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\panel-standout-triangle.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\ribbon-home.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\ribbon-two-col.png" />
+    <Content Include="Content\StateTemplate\images\template2014\santabarbara\ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\seal-of-california.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\2column-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\body-background.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\footer-bg.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\header-background.jpg" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\megadropdown-ribbon.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\panel-standout-triangle.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-home.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-two-col.png" />
+    <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon.png" />
+    <Content Include="Content\StateTemplate\js\cagov.core.js" />
+    <Content Include="Content\StateTemplate\js\libs\d3.js" />
+    <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery-1.11.1.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
+    <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
+    <Content Include="Content\StateTemplate\js\libs\modernizr-2.0.6.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\modernizr-extra.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\Plotly.js" />
+    <Content Include="Content\StateTemplate\js\libs\respond.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
+    <Content Include="Content\StateTemplate\js\libs\typedarray.js" />
+    <Content Include="Content\StateTemplate\js\search.js" />
+    <Content Include="Content\StateTemplate\sample\images\150x100.gif" />
+    <Content Include="Content\StateTemplate\sample\images\150x150.gif" />
+    <Content Include="Content\StateTemplate\sample\images\150x150Map.gif" />
+    <Content Include="Content\StateTemplate\sample\images\150x200.gif" />
+    <Content Include="Content\StateTemplate\sample\images\70x70.gif" />
+    <Content Include="Content\StateTemplate\sample\images\70x93.gif" />
+    <Content Include="Content\StateTemplate\sample\images\734x300.gif" />
+    <Content Include="Content\StateTemplate\sample\images\75x75.gif" />
+    <Content Include="Content\StateTemplate\sample\images\ad-apps.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\ad-survey.png" />
+    <Content Include="Content\StateTemplate\sample\images\ad-ui-online.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background_1.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background_2.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background_3.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background_4.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background_5.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\charts\bar_chart_fallback.png" />
+    <Content Include="Content\StateTemplate\sample\images\charts\half_donut_fallback.PNG" />
+    <Content Include="Content\StateTemplate\sample\images\charts\home_page_fallback.PNG" />
+    <Content Include="Content\StateTemplate\sample\images\charts\line_chart_fallback.png" />
+    <Content Include="Content\StateTemplate\sample\images\charts\pie_chart_fallback.png" />
+    <Content Include="Content\StateTemplate\sample\images\dw-optionalslideshow.png" />
+    <Content Include="Content\StateTemplate\sample\images\example.gif" />
+    <Content Include="Content\StateTemplate\sample\images\FogHorns-1920.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\Foghorns-min-more.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\Foghorns-min.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\Foghorns.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\logo-32.png" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\orangecounty-big.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\orangecounty-square.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\orangecounty-thumb.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\pasorobles-big.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\pasorobles-square.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\pasorobles-thumb.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\santabarbara-big.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\santabarbara-square.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\santabarbara-thumb.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\sierra-big.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\sierra-square.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\sierra-thumb.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\GoldenGate-min-more.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\GoldenGate-min.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\GoldenGate.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_email.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_facebook.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_flickr.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_flipboard.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_mobile.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_pinterest.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_podcast.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_qrcode.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_rss.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_survey.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_twitter.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\connect_youtube.png" />
+    <Content Include="Content\StateTemplate\sample\images\logo-cal-fire.png" />
+    <Content Include="Content\StateTemplate\sample\images\logo-cal-vet.png" />
+    <Content Include="Content\StateTemplate\sample\images\logo-calhr.png" />
+    <Content Include="Content\StateTemplate\sample\images\logo-dmv.png" />
+    <Content Include="Content\StateTemplate\sample\images\logo-edd.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\logo-scif.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\mobile-gallery-app.png" />
+    <Content Include="Content\StateTemplate\sample\images\mobile-header-icons-area.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\mobile-menu-icons-area.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\placeholder\1280x720.gif" />
+    <Content Include="Content\StateTemplate\sample\images\placeholder\207x136.gif" />
+    <Content Include="Content\StateTemplate\sample\images\placeholder\800x600.gif" />
+    <Content Include="Content\StateTemplate\sample\images\sample-map-830x400.png" />
+    <Content Include="Content\StateTemplate\sample\images\sample-map.png" />
+    <Content Include="Content\StateTemplate\sample\images\sample-nav-image.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\sample-nav-image2.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-drive.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\driving-test.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\redwoods.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\service-file-unemployment.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\service-find-job.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\service-paid-family-leave.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\service-register-vehicle.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\student-driver.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\student-driver.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\StateTemplate\fonts\CaGov.eot" />
+    <Content Include="Content\StateTemplate\fonts\CaGov.ttf" />
+    <Content Include="Content\StateTemplate\fonts\CaGov.woff" />
+    <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\StateTemplate\fonts\selection.json" />
+    <Content Include="Content\StateTemplate\sample\configs\bar.csv" />
+    <Content Include="Content\StateTemplate\sample\configs\bar.json" />
+    <Content Include="Content\StateTemplate\sample\configs\line.csv" />
+    <Content Include="Content\StateTemplate\sample\configs\line.json" />
+    <Content Include="Content\StateTemplate\sample\configs\pie.csv" />
+    <Content Include="Content\StateTemplate\sample\configs\pie.json" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\modules\ask-bar.cshtml" />
+    <Content Include="Views\Shared\modules\branding.cshtml" />
+    <Content Include="Views\Shared\modules\global-footer.cshtml" />
+    <Content Include="Views\Shared\modules\header-single-banner.cshtml" />
+    <Content Include="Views\Shared\modules\location-bar.cshtml" />
+    <Content Include="Views\Shared\modules\mobile-controls.cshtml" />
+    <Content Include="Views\Shared\modules\navigation.cshtml" />
+    <Content Include="Views\Shared\modules\scripts.cshtml" />
+    <Content Include="Views\Shared\modules\search-results.cshtml" />
+    <Content Include="Views\Shared\modules\search.cshtml" />
+    <Content Include="Views\Shared\modules\section-footer2.cshtml" />
+    <Content Include="Views\Shared\modules\section-green-buildings.cshtml" />
+    <Content Include="Views\Shared\modules\section-green-stats.cshtml" />
+    <Content Include="Views\Shared\modules\section-mobile-gallery.cshtml" />
+    <Content Include="Views\Shared\modules\section-open-data.cshtml" />
+    <Content Include="Views\Shared\modules\section-service-group.cshtml" />
+    <Content Include="Views\Shared\modules\service-card.cshtml" />
+    <Content Include="Views\Shared\modules\settings-bar.cshtml" />
+    <Content Include="Views\Shared\modules\utility-header.cshtml" />
+    <Content Include="Views\Shared\modules\service-tiles-empty.cshtml" />
+    <Content Include="Views\Shared\modules\service-profile.cshtml" />
+    <Content Include="Views\Shared\modules\google-cse.cshtml" />
+    <Content Include="Views\Shared\modules\section-data-visualizations.cshtml" />
+    <Content Include="Views\Shared\modules\section-related-links.cshtml" />
+    <Content Include="Views\Shared\modules\section-service-advertisement.cshtml" />
+    <Content Include="Views\Shared\modules\section-service-faq.cshtml" />
+    <Content Include="Views\Shared\modules\service-directory.cshtml" />
+    <Content Include="Views\Shared\modules\serp.cshtml" />
+    <Content Include="Views\Shared\modules\search-results-standalone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\StateTemplate\images\_notes\" />
+    <Folder Include="Content\StateTemplate\sample\_notes\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52261</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52261/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

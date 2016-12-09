@@ -1,0 +1,1 @@
+$(document).ready(function(){var a="/serp.html",b={init:function(){var b=document.getElementById("local_form");b&&(b.action=a,b.cof.value="FORID:10"),navigator.appVersion.indexOf("MSIE 7.")==-1&&navigator.appVersion.indexOf("MSIE 8.")==-1||(document.getElementById("search_local_textfield").value="")}};b.init()});
