@@ -1,4 +1,4 @@
-MVC Template Instructions
+MVC TEMPLATE INSTRUCTIONS
 
 1 - Copy Content/StateTemplate folder to your project Content folder
 
@@ -10,4 +10,4 @@ MVC Template Instructions
 
 5 - Add appropriate header and footer cshtml modules to _Layout.cshtml
 
-6 - Refference http://beta.template.webtools.ca.gov/ for examples
+6 - Refference http://beta.template.webtools.ca.gov/ for working examples
