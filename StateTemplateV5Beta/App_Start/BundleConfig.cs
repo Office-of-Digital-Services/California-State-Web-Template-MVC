@@ -10,7 +10,8 @@ namespace StateTemplateV5Beta
         {
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateLibJs").Include(
                      "~/Content/StateTemplate/js/libs/modernizr-2.0.6.min.js",
-                     "~/Content/StateTemplate/js/libs/modernizr-extra.min.js"));
+                     "~/Content/StateTemplate/js/libs/modernizr-extra.min.js",
+                     "~/Content/StateTemplate/js/libs/jquery-1.12.4.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
                      "~/Content/StateTemplate/js/cagov.core.js",
@@ -18,7 +19,8 @@ namespace StateTemplateV5Beta
 
             bundles.Add(new StyleBundle("~/Content/stateTemplateCss").Include(
                       "~/Content/StateTemplate/css/cagov.core.css",
-                      "~/Content/StateTemplate/css/colorscheme-oceanside.css"));
+                      "~/Content/StateTemplate/css/colorscheme-oceanside.css",
+                      "~/Content/site.css"));
         }
     }
 }

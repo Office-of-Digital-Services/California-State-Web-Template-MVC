@@ -1,0 +1,16 @@
+﻿.banner-main {
+    text-align: center;
+    background-color: #0C6995;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0 20px 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('StateTemplate/images/background.jpg');
+    background-size: cover;
+}
+.home-logo {
+    border: 2px solid #fff;
+    padding: 4px 12px 4px 12px;
+}

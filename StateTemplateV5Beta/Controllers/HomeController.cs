@@ -13,19 +13,25 @@ namespace StateTemplateV5Beta.Controllers
             return View();
         }
 
-        public ActionResult serviceProfile()
+        public ActionResult Contact()
         {
-            return View("~/Views/Shared/modules/service-profile.cshtml");
+            return View();
         }
 
-        public ActionResult serviceDirectory()
+
+        public ActionResult Structure()
         {
-            return View("~/Views/Shared/modules/service-directory.cshtml");
+            return View();
         }
-    
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
         public ActionResult serp()
         {
-            return View("~/Views/Shared/modules/serp.cshtml");
+            return View();
         }
     }
 }

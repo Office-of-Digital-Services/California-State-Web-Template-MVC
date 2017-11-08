@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "serp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+
+
+<!--Search result section-->
+<div class="section-default">
+    <div class="container search-results-header">
+        <h1>Search Results</h1>
+        <gcse:searchbox-only resultsUrl="~/Home/serp" enableAutoComplete="true"></gcse:searchbox-only>
+
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <gcse:searchresults-only></gcse:searchresults-only>
+    </div>
+
+</div>
+
+

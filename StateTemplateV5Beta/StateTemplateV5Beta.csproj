@@ -127,14 +127,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\site.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
     <Content Include="Content\StateTemplate\css\cagov.font-only.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-eureka.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-mono.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-orangecounty.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-pasorobles.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-santabarbara.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-sierra.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-trinity.css" />
     <Content Include="Content\StateTemplate\favicon.ico" />
     <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
     <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\StateTemplate\images\background.jpg" />
     <Content Include="Content\StateTemplate\images\banner\banner-blank.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-gal.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-guy.png" />
@@ -213,6 +220,7 @@
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-1.11.1.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery-1.12.4.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
     <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
     <Content Include="Content\StateTemplate\js\libs\modernizr-2.0.6.min.js" />
@@ -222,10 +230,14 @@
     <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
     <Content Include="Content\StateTemplate\js\libs\typedarray.js" />
     <Content Include="Content\StateTemplate\js\search.js" />
+    <Content Include="Content\StateTemplate\sample\images\01.png" />
+    <Content Include="Content\StateTemplate\sample\images\02.png" />
+    <Content Include="Content\StateTemplate\sample\images\03.png" />
     <Content Include="Content\StateTemplate\sample\images\150x100.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x150.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x150Map.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x200.gif" />
+    <Content Include="Content\StateTemplate\sample\images\500x450.jpg" />
     <Content Include="Content\StateTemplate\sample\images\70x70.gif" />
     <Content Include="Content\StateTemplate\sample\images\70x93.gif" />
     <Content Include="Content\StateTemplate\sample\images\734x300.gif" />
@@ -233,16 +245,19 @@
     <Content Include="Content\StateTemplate\sample\images\ad-apps.jpg" />
     <Content Include="Content\StateTemplate\sample\images\ad-survey.png" />
     <Content Include="Content\StateTemplate\sample\images\ad-ui-online.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background.jpg" />
     <Content Include="Content\StateTemplate\sample\images\background_1.jpg" />
     <Content Include="Content\StateTemplate\sample\images\background_2.jpg" />
     <Content Include="Content\StateTemplate\sample\images\background_3.jpg" />
     <Content Include="Content\StateTemplate\sample\images\background_4.jpg" />
     <Content Include="Content\StateTemplate\sample\images\background_5.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\background_6.jpg" />
     <Content Include="Content\StateTemplate\sample\images\charts\bar_chart_fallback.png" />
     <Content Include="Content\StateTemplate\sample\images\charts\half_donut_fallback.PNG" />
     <Content Include="Content\StateTemplate\sample\images\charts\home_page_fallback.PNG" />
     <Content Include="Content\StateTemplate\sample\images\charts\line_chart_fallback.png" />
     <Content Include="Content\StateTemplate\sample\images\charts\pie_chart_fallback.png" />
+    <Content Include="Content\StateTemplate\sample\images\charts\_notes\dwsync.xml" />
     <Content Include="Content\StateTemplate\sample\images\dw-optionalslideshow.png" />
     <Content Include="Content\StateTemplate\sample\images\example.gif" />
     <Content Include="Content\StateTemplate\sample\images\FogHorns-1920.jpg" />
@@ -262,6 +277,7 @@
     <Content Include="Content\StateTemplate\sample\images\gallery\sierra-big.jpg" />
     <Content Include="Content\StateTemplate\sample\images\gallery\sierra-square.jpg" />
     <Content Include="Content\StateTemplate\sample\images\gallery\sierra-thumb.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\gallery\_notes\dwsync.xml" />
     <Content Include="Content\StateTemplate\sample\images\GoldenGate-min-more.jpg" />
     <Content Include="Content\StateTemplate\sample\images\GoldenGate-min.jpg" />
     <Content Include="Content\StateTemplate\sample\images\GoldenGate.jpg" />
@@ -277,11 +293,14 @@
     <Content Include="Content\StateTemplate\sample\images\home\connect_survey.png" />
     <Content Include="Content\StateTemplate\sample\images\home\connect_twitter.png" />
     <Content Include="Content\StateTemplate\sample\images\home\connect_youtube.png" />
+    <Content Include="Content\StateTemplate\sample\images\home\_notes\dwsync.xml" />
     <Content Include="Content\StateTemplate\sample\images\logo-cal-fire.png" />
     <Content Include="Content\StateTemplate\sample\images\logo-cal-vet.png" />
     <Content Include="Content\StateTemplate\sample\images\logo-calhr.png" />
     <Content Include="Content\StateTemplate\sample\images\logo-dmv.png" />
     <Content Include="Content\StateTemplate\sample\images\logo-edd.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\logo-EDD.png" />
+    <Content Include="Content\StateTemplate\sample\images\logo-PARKS.png" />
     <Content Include="Content\StateTemplate\sample\images\logo-scif.jpg" />
     <Content Include="Content\StateTemplate\sample\images\mobile-gallery-app.png" />
     <Content Include="Content\StateTemplate\sample\images\mobile-header-icons-area.jpg" />
@@ -289,11 +308,14 @@
     <Content Include="Content\StateTemplate\sample\images\placeholder\1280x720.gif" />
     <Content Include="Content\StateTemplate\sample\images\placeholder\207x136.gif" />
     <Content Include="Content\StateTemplate\sample\images\placeholder\800x600.gif" />
+    <Content Include="Content\StateTemplate\sample\images\placeholder\_notes\dwsync.xml" />
+    <Content Include="Content\StateTemplate\sample\images\primary-banner.jpg" />
     <Content Include="Content\StateTemplate\sample\images\sample-map-830x400.png" />
     <Content Include="Content\StateTemplate\sample\images\sample-map.png" />
     <Content Include="Content\StateTemplate\sample\images\sample-nav-image.jpg" />
     <Content Include="Content\StateTemplate\sample\images\sample-nav-image2.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-drive.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-find-job.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-tiles\driving-test.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-tiles\redwoods.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-tiles\service-file-unemployment.jpg" />
@@ -301,7 +323,10 @@
     <Content Include="Content\StateTemplate\sample\images\service-tiles\service-paid-family-leave.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-tiles\service-register-vehicle.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-tiles\student-driver.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\service-tiles\_notes\dwsync.xml" />
     <Content Include="Content\StateTemplate\sample\images\student-driver.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\working.jpg" />
+    <Content Include="Content\StateTemplate\sample\images\_notes\dwsync.xml" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -367,9 +392,19 @@
     <Content Include="Views\Shared\modules\service-directory.cshtml" />
     <Content Include="Views\Shared\modules\serp.cshtml" />
     <Content Include="Views\Shared\modules\search-results-standalone.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Structure.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\serp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\StateTemplate\images\template2014\oceanside\_notes\" />
+    <Folder Include="Content\StateTemplate\images\template2014\orangecounty\_notes\" />
+    <Folder Include="Content\StateTemplate\images\template2014\pasorobles\_notes\" />
+    <Folder Include="Content\StateTemplate\images\template2014\santabarbara\_notes\" />
+    <Folder Include="Content\StateTemplate\images\template2014\sierra\_notes\" />
+    <Folder Include="Content\StateTemplate\images\template2014\_notes\" />
     <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Models\" />

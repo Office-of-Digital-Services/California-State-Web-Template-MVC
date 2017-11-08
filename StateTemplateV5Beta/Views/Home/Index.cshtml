@@ -1,40 +1,74 @@
 ﻿@{
-	ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
-<div class="navigation-search">
-	<div id="head-search" class="search-container featured-search fade">
-		<!-- Include Search -->
-		@Html.Partial("~/Views/shared/modules/search.cshtml")
-	</div>
-
+<div class="banner-main">
+    <div class="container">
+        <h1><span class="home-logo rounded-50x"><i class="ca-gov-icon-capitol"></i></span>&nbsp;MVC State Template Project</h1>
+    </div>
 </div>
+<main class="main-primary">
+    <!-- Begin Main Content -->
 
-<!-- Search Results -->
-<div class="search-results-container">
-	@Html.Partial("~/Views/shared/modules/search-results.cshtml")
-</div>
-<div class="header-decoration"></div>
+    <h2 class="text-center">Welcome to the MVC State Template Project</h2>
 
-<body class="primary">
+    <p class="text-center">Introduction text</p>
+    <div class="row p-b-lg">
+        <div class="offset-quarter half">
+            <section id="loginForm" class="section-understated p-a-lg shadow">
+
+                <!--Form states-->
+                <div id="email-box" class="form-group m-b-md">
+                    <div class="input-group">
+                        <div class="input-group-addon d-flex">
+                            <i class="ca-gov-icon-person"></i>
+                        </div>
+                        <input id="email" class="form-control" type="text" placeholder="Enter Your Email">
+                    </div>
+
+                    <div class="input-group m-t-md">
+                        <div class="input-group-addon d-flex">
+                            <i class="ca-gov-icon-key"></i>
+                        </div>
+                        <input id="password" class="form-control" type="password" placeholder="Enter Your Password">
+                    </div>
 
 
-	<!-- Ask Bar -->
-	@Html.Partial("~/Views/shared/modules/ask-bar.cshtml")
-	<!-- Step 5: Header Images -->
-	<!-- Include for optional slideshow banner -->
-	@Html.Partial("~/Views/shared/modules/header-single-banner.cshtml")
+                    <small id="email-feedback" class="feedback" style="display:none">Email not registered, please register to continue.</small>
+                </div>
+                <div class="row">
+                    <div class="half">
+                        <label class="form-check-inline p-l-md m-l-0 m-r-md">
+                            <input class="hidden-up pos-abs" type="checkbox">
+                            <div class="check-icon-checkbox">
+                                <i class="ca-gov-icon-check-mark"></i>
+                            </div>
+                            Remember me
+                        </label>
 
-	<div id="main-content" class="main-content">
-		<main class="main-primary">
-			<!-- Begin Main Content -->
-			@Html.Partial("~/Views/shared/modules/section-service-group.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-open-data.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-green-buildings.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-green-stats.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-mobile-gallery.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-footer2.cshtml")
-			<!-- End Main Content -->
-		</main>
-	</div>
-</body>
+                    </div>
+                    <div class="half">
+                        <a href="#" class="pull-right">Forgot your password?</a>
+                    </div>
+                </div>
+                <div class="row m-t-md m-b-md text-center">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <input type="submit" value="Log in" class="btn btn-lg btn-primary full-width" />
+                    </div>
+                </div>
+
+                <div class="row m-t-md text-center">
+                    <small>Not registered yet?</small>
+                </div>
+                <div class="row m-t text-center">
+                    <a href="#" class="btn btn-default">Register</a>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+
+    <!-- End Main Content -->
+</main>
