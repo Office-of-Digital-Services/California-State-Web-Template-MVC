@@ -221,6 +221,7 @@
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-3.2.1.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
     <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
     <Content Include="Content\StateTemplate\js\libs\modernizr-2.0.6.min.js" />

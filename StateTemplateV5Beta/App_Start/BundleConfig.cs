@@ -12,7 +12,7 @@ namespace StateTemplateV5Beta
                      "~/Content/StateTemplate/js/libs/modernizr-2.0.6.min.js",
                      "~/Content/StateTemplate/js/libs/modernizr-extra.min.js",
                      "~/Content/StateTemplate/js/libs/jquery-3.2.1.min.js",
-                     "~/Content/StateTemplate/js/libs/jquery-migrate-3.0.1.js"));
+                     "~/Content/StateTemplate/js/libs/jquery-migrate-3.0.1.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
                      "~/Content/StateTemplate/js/cagov.core.js",
