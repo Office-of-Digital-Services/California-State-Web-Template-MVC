@@ -135,6 +135,7 @@
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-orangecounty.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-pasorobles.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-sacramento.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-santabarbara.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-sierra.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-trinity.css" />
