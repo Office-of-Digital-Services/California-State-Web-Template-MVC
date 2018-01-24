@@ -4380,30 +4380,30 @@ a:focus {
   color: #a82824;
 }
 /* -----------------------------------------
-   SACRAMENTO
+   OCEANSIDE
 ----------------------------------------- */
-/* ----- SACRAMENTO PRIMARY THEME COLORS -----  */
+/* ----- OCEANSIDE PRIMARY THEME COLORS -----  */
 .color-highlight,
 color-p1 {
-  color: #7bb0da;
+  color: #FDB81E;
 }
 .color-primary,
 color-p2 {
-  color: #153554;
+  color: #046B99;
 }
 .color-standout,
 color-p3 {
-  color: #730000;
+  color: #323A45;
 }
 /*  SECONDARY THEME COLORS	*/
 .color-s1 {
-  color: #E1ECF7;
+  color: #E1F2F7;
 }
 .color-s2 {
-  color: #c7d9ea;
+  color: #9FDBF1;
 }
 .color-s3 {
-  color: #9bb8d3;
+  color: #50aee4;
 }
 /* -----------------------------------------
    RESET /source/less/cagov/reset.less
@@ -5867,7 +5867,7 @@ h6,
 }
 .global-footer a:not(.btn):hover,
 .global-footer a:not(.btn):focus {
-  color: #7bb0da;
+  color: #FDB81E;
   text-decoration: underline;
 }
 .global-footer a:not(.btn):focus {
@@ -6607,7 +6607,7 @@ GOOGLE CUSTOM SEARCH CUSTOMIZATION OVERRIDES beta 5.0 addition
    GLOBAL NAVIGATION - /source/less/cagov/navigation.less
 ----------------------------------------- */
 .navigation-search {
-  border-bottom: 5px solid #7bb0da;
+  border-bottom: 5px solid #FDB81E;
   position: relative;
 }
 .main-navigation {
@@ -7339,7 +7339,7 @@ a.second-level-link [class^="ca-gov-icon-"] {
   cursor: pointer;
   text-align: right;
   position: relative;
-  color: #153554;
+  color: #046B99;
   background: #fff;
   top: 0;
   width: 100%;
@@ -7380,7 +7380,7 @@ a.second-level-link [class^="ca-gov-icon-"] {
   text-align: center;
   cursor: pointer;
   padding-left: 7px;
-  border-left: 1px solid #E1ECF7;
+  border-left: 1px solid #E1F2F7;
 }
 .main-nav-icons {
   width: 130px;
@@ -7396,7 +7396,7 @@ a.second-level-link [class^="ca-gov-icon-"] {
   top: 0;
   width: 100%;
   min-height: 40px;
-  background: #153554;
+  background: #046B99;
   color: #ffffff;
 }
 .utility-header .half {
@@ -7426,7 +7426,7 @@ a.second-level-link [class^="ca-gov-icon-"] {
 .utility-header a:hover,
 .utility-header a:focus,
 .utility-header a.hovered {
-  color: #dfecf6;
+  color: #fee09c;
   text-decoration: none;
 }
 .utility-header ul {
@@ -10006,10 +10006,10 @@ figcaption {
   font-size: 12px;
 }
 .color-primary--hover:hover {
-  color: #153554;
+  color: #046B99;
 }
 .bg-primary--hover:hover {
-  background-color: #153554;
+  background-color: #046B99;
 }
 .color-gray-dark {
   color: #333333;
@@ -10643,9 +10643,9 @@ d-block {
   width: 18px;
   height: 18px;
   font-size: 12px;
-  color: #153554;
+  color: #046B99;
   border: 1px solid;
-  border-color: #153554;
+  border-color: #046B99;
   border-radius: 50%;
 }
 .check-icon-radio i {
@@ -10680,7 +10680,7 @@ d-block {
   font-size: 12px;
   color: #fff;
   border: 1px solid;
-  border-color: #153554;
+  border-color: #046B99;
 }
 .check-icon-checkbox i {
   display: block;
@@ -10707,12 +10707,12 @@ input[type="radio"]:checked + i,
 input[type="checkbox"]:checked + * i,
 input[type="radio"]:checked + * i {
   color: #fff;
-  background-color: #153554;
-  border-color: #153554;
+  background-color: #046B99;
+  border-color: #046B99;
 }
 .bg-primary--checked.checked,
 .checked .bg-primary--checked {
-  background-color: #153554 !important;
+  background-color: #046B99 !important;
 }
 .select {
   border: 1px solid #ccc;
@@ -10762,14 +10762,14 @@ input[type="checkbox"]:checked + .bg-primary--checked,
 input[type="radio"]:checked + .bg-primary--checked,
 input[type="checkbox"]:checked + * .bg-primary--checked,
 input[type="radio"]:checked + * .bg-primary--checked {
-  background-color: #153554;
+  background-color: #046B99;
 }
 /* highlight Color */
 input[type="checkbox"]:checked + .bg-highlight--checked,
 input[type="radio"]:checked + .bg-highlight--checked,
 input[type="checkbox"]:checked + * .bg-highlight--checked,
 input[type="radio"]:checked + * .bg-highlight--checked {
-  background-color: #7bb0da;
+  background-color: #FDB81E;
 }
 /* White Color */
 input[type="checkbox"]:checked + .color-white--checked,
@@ -10781,7 +10781,7 @@ input[type="radio"]:checked + * .color-white--checked {
 /* Focusable custom checkboxes and radios for accessibility */
 input[type="checkbox"]:focus + div,
 input[type="radio"]:focus + div {
-  box-shadow: 0 0 2px 2px #9bb8d3;
+  box-shadow: 0 0 2px 2px #50aee4;
 }
 input[type="checkbox"]:focus + .btn,
 input[type="radio"]:focus + .btn {
@@ -11519,7 +11519,7 @@ fieldset[disabled] .location.contact .btn.active {
 }
 .bg-blue-gradient {
   background-repeat: repeat-x;
-  background-image: linear-gradient(225deg, #1f89db, #153554);
+  background-image: linear-gradient(225deg, #1f89db, #046B99);
 }
 .icon-block {
   position: relative;
@@ -11582,7 +11582,7 @@ fieldset[disabled] .location.contact .btn.active {
   opacity: 0.9;
 }
 .circle-icon {
-  background: #400000;
+  background: #1d2127;
   width: 7rem;
   height: 7rem;
   text-align: center;
@@ -11604,7 +11604,7 @@ fieldset[disabled] .location.contact .btn.active {
 }
 .icon-link:hover,
 .icon-link:focus {
-  color: #7bb0da !important;
+  color: #FDB81E !important;
 }
 /* -----------------------------------------
    JOBS - /source/less/cagov/jobs.less
@@ -11925,7 +11925,7 @@ ul.list-overstated a {
   vertical-align: .1em;
   font-size: .7em;
   display: inline-block;
-  color: #153554;
+  color: #046B99;
 }
 .list-primary li.open:before {
   content: "\4f";
@@ -12037,8 +12037,8 @@ blockquote {
 } */
 .btn-primary {
   color: #fff;
-  background-color: #153554;
-  border-color: #153554;
+  background-color: #046B99;
+  border-color: #046B99;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -12048,8 +12048,8 @@ blockquote {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #0e2337;
-  border-color: #0e2337;
+  background-color: #035376;
+  border-color: #035376;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -12071,11 +12071,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #153554;
-  border-color: #153554;
+  background-color: #046B99;
+  border-color: #046B99;
 }
 .btn-primary .badge {
-  color: #153554;
+  color: #046B99;
   background-color: #fff;
 }
 .btn-default {
@@ -12123,8 +12123,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-standout {
   color: #fff;
-  background-color: #730000;
-  border-color: #730000;
+  background-color: #323A45;
+  border-color: #323A45;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -12134,8 +12134,8 @@ fieldset[disabled] .btn-default.active {
 .btn-standout.active,
 .open > .dropdown-toggle.btn-standout {
   color: #fff;
-  background-color: #4f0000;
-  border-color: #4f0000;
+  background-color: #232930;
+  border-color: #232930;
 }
 .btn-standout:active,
 .btn-standout.active,
@@ -12157,17 +12157,17 @@ fieldset[disabled] .btn-standout:active,
 .btn-standout.disabled.active,
 .btn-standout[disabled].active,
 fieldset[disabled] .btn-standout.active {
-  background-color: #730000;
-  border-color: #730000;
+  background-color: #323A45;
+  border-color: #323A45;
 }
 .btn-standout .badge {
-  color: #730000;
+  color: #323A45;
   background-color: #fff;
 }
 .btn-highlight {
   color: #333333;
-  background-color: #7bb0da;
-  border-color: #7bb0da;
+  background-color: #FDB81E;
+  border-color: #FDB81E;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -12176,9 +12176,9 @@ fieldset[disabled] .btn-standout.active {
 .btn-highlight:active,
 .btn-highlight.active,
 .open > .dropdown-toggle.btn-highlight {
-  color: #730000;
-  background-color: #5f9fd2;
-  border-color: #5f9fd2;
+  color: #323A45;
+  background-color: #f5aa02;
+  border-color: #f5aa02;
 }
 .btn-highlight:active,
 .btn-highlight.active,
@@ -12200,11 +12200,11 @@ fieldset[disabled] .btn-highlight:active,
 .btn-highlight.disabled.active,
 .btn-highlight[disabled].active,
 fieldset[disabled] .btn-highlight.active {
-  background-color: #7bb0da;
-  border-color: #7bb0da;
+  background-color: #FDB81E;
+  border-color: #FDB81E;
 }
 .btn-highlight .badge {
-  color: #7bb0da;
+  color: #FDB81E;
   background-color: #333333;
 }
 .btn-secondary {
@@ -12336,7 +12336,7 @@ fieldset[disabled] a.btn-more {
 }
 .btn-more.inverse:hover,
 .btn-more.inverse:focus {
-  color: #7bb0da;
+  color: #FDB81E;
 }
 @media (max-width: 767px) {
   [role="group"].btn-group {
@@ -12405,10 +12405,10 @@ fieldset[disabled] a.btn-more {
   font-size: 2.5em;
 }
 .site-settings button.close:hover {
-  color: #7bb0da;
+  color: #FDB81E;
 }
 .site-settings button.close:focus {
-  color: #7bb0da;
+  color: #FDB81E;
 }
 .site-settings button.close span {
   position: relative;
@@ -12505,7 +12505,7 @@ fieldset[disabled] a.btn-more {
   text-align: center;
   outline: none;
   min-height: 240px;
-  color: #E1ECF7;
+  color: #E1F2F7;
   background: #046B99;
   background-position: center;
   background-repeat: no-repeat;
@@ -12577,10 +12577,10 @@ fieldset[disabled] a.btn-more {
   transition: all .3s;
 }
 .service-tile .teaser .title:hover {
-  color: #7bb0da;
+  color: #FDB81E;
 }
 .service-tile:focus .teaser .title {
-  color: #7bb0da;
+  color: #FDB81E;
 }
 .title:after {
   margin-top: 8px !important;
@@ -12610,8 +12610,8 @@ fieldset[disabled] a.btn-more {
   z-index: 5;
 }
 .service-tile-empty {
-  background: #730000;
-  color: #a10000;
+  background: #323A45;
+  color: #455060;
   overflow: hidden;
   width: 100%;
   /* Need to keep the two column longer than bootstrap has .make-*-column for */
