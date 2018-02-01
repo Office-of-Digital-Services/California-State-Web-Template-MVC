@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateTemplateV5", "StateTemplateV5Beta\StateTemplateV5.csproj", "{FAFB0CB7-7922-4BDD-AF3A-EACCD37D431C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateTemplateV5", "StateTemplateV5\StateTemplateV5.csproj", "{FAFB0CB7-7922-4BDD-AF3A-EACCD37D431C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
