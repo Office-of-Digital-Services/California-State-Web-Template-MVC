@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace StateTemplateV5Beta
+namespace StateTemplateV5
 {
     public class FilterConfig
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace StateTemplateV5Beta.Controllers
+namespace StateTemplateV5.Controllers
 {
     public class HomeController : Controller
     {
