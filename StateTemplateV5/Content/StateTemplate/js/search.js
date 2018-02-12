@@ -23,6 +23,7 @@ _gaq.push(['b._trackPageview']);
     s.parentNode.insertBefore(ga, s);
 })();
 
+
 // Google Custom Search 
 
 (function () {
@@ -46,7 +47,7 @@ _gaq.push(['b._trackPageview']);
             $searchContainer.addClass("search-freeze-width");
         });
 
-        $searchText.blur(function () {
+        $searchText.on("blur", function () {
             $searchContainer.removeClass("search-freeze-width");
 
         });
@@ -61,11 +62,11 @@ _gaq.push(['b._trackPageview']);
 
             // let the user know the input box is where they should search
             $(".primary #head-search").addClass('play-animation').one(
-                'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-                function () {
-                    $(this).removeClass('play-animation');
+            'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function () {
+                $(this).removeClass('play-animation');
 
-                });
+            });
 
 
         });
@@ -79,7 +80,7 @@ _gaq.push(['b._trackPageview']);
             // close the the menu when we are search
             $('#navigation').addClass('mobile-closed');
             // fire a scroll event to help update headers if need be
-            $(window).scroll();
+            $(window).on('scroll');
 
             $.event.trigger('cagov.searchresults.show');
         }
@@ -91,7 +92,7 @@ _gaq.push(['b._trackPageview']);
 
 
             // fire a scroll event to help update headers if need be
-            $(window).scroll();
+            $(window).on('scroll');
 
             $.event.trigger('cagov.searchresults.hide');
         }
