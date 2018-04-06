@@ -23,7 +23,6 @@ _gaq.push(['b._trackPageview']);
     s.parentNode.insertBefore(ga, s);
 })();
 
-
 // Google Custom Search 
 
 (function () {
@@ -40,7 +39,7 @@ _gaq.push(['b._trackPageview']);
 
         // search icon is added before search button (search button is set to opacity 0 in css)
         $("input.gsc-search-button").before("<span class='ca-gov-icon-search search-icon' aria-hidden='true'></span>");
-
+        $("button.gsc-search-button").before("<span class='ca-gov-icon-search search-icon' aria-hidden='true'></span>");
 
         $searchText.on("click", function () {
             addSearchResults();
@@ -99,13 +98,5 @@ _gaq.push(['b._trackPageview']);
 
     }
 
-
-    var cx = '001779225245372747843:9s-idxui5pk';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script');
-    s[s.length - 1].parentNode.insertBefore(gcse, s[s.length - 1]);
 
 })();
