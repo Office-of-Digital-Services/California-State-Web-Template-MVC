@@ -225,8 +225,7 @@
     <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
     <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
-    <Content Include="Content\StateTemplate\js\libs\modernizr-2.0.6.min.js" />
-    <Content Include="Content\StateTemplate\js\libs\modernizr-extra.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\modernizr-3.6.0.min.js" />
     <Content Include="Content\StateTemplate\js\libs\Plotly.js" />
     <Content Include="Content\StateTemplate\js\libs\respond.min.js" />
     <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
