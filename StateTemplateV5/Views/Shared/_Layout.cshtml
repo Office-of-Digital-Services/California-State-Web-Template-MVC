@@ -148,17 +148,17 @@
         <div class="navigation-search">
             <!-- Include Navigation -->
             <!-- Top Level Navigation Only -->
-            <nav id="navigation" class="main-navigation singlelevelnav auto-highlight">
+            <nav id="navigation" class="main-navigation singlelevelnav">
                 <ul id="nav_list" class="top-level-nav">
-                    <li class="home-link nav-item">
+                    <li  class="home-link nav-item">
                         <a href="/" class="first-level-link"><span id="nav_home_container" class="ca-gov-icon-home" aria-hidden="true"></span>Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="~/Home/About" class="first-level-link"><span class="ca-gov-icon-info-bubble" aria-hidden="true"></span>About</a>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active nav-item" : "nav-item")">
+                        <a href="@Url.Action("About", "Home")" class="first-level-link"><span class="ca-gov-icon-info-bubble" aria-hidden="true"></span>About</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="~/Home/Structure" class="first-level-link"><span class="ca-gov-icon-flowchart" aria-hidden="true"></span>Structure</a>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Structure" ? "active nav-item" : "nav-item")">
+                        <a href="@Url.Action("Structure", "Home")" class="first-level-link"><span class="ca-gov-icon-flowchart" aria-hidden="true"></span>Structure</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://github.com/Office-of-Digital-Innovation" target="_blank" class="first-level-link"><span class="ca-gov-icon-download" aria-hidden="true"></span>Download</a>
@@ -166,8 +166,8 @@
                     <li class="nav-item">
                         <a href="https://webstandards.ca.gov" target="_blank" class="first-level-link"><span class="ca-gov-icon-state" aria-hidden="true"></span>Web Standards</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="~/Home/Contact" class="first-level-link"><span class="ca-gov-icon-lightbulb" aria-hidden="true"></span>Contact Us</a>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active nav-item" : "nav-item")">
+                        <a href="@Url.Action("Contact", "Home")" class="first-level-link"><span class="ca-gov-icon-lightbulb" aria-hidden="true"></span>Contact Us</a>
                     </li>
                     <li class="nav-item" id="nav-item-search">
                         <a href="javascript:;" class="first-level-link"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
