@@ -14,12 +14,12 @@ namespace StateTemplateV5
                      "~/Content/StateTemplate/js/libs/jquery-migrate-3.0.1.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
-                     "~/Content/StateTemplate/js/cagov.core.js",
+                     "~/Content/StateTemplate/js/cagov.core.min.js",
                      "~/Content/StateTemplate/js/search.js"));
 
             bundles.Add(new StyleBundle("~/Content/stateTemplateCss").Include(
-                      "~/Content/StateTemplate/css/cagov.core.css",
-                      "~/Content/StateTemplate/css/colorscheme-oceanside.css",
+                      "~/Content/StateTemplate/css/cagov.core.min.css",
+                      "~/Content/StateTemplate/css/colorscheme-oceanside.min.css",
                       "~/Content/site.css"));
         }
     }
