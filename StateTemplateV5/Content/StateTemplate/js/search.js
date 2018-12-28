@@ -4,7 +4,7 @@
 
 // Google Analytics
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'XXXXXXX-XX']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
+_gaq.push(['_setAccount', 'UA-20973992-20']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
 _gaq.push(['_gat._anonymizeIp']);
 _gaq.push(['_setDomainName', '.ca.gov']);
 _gaq.push(['_trackPageview']);
