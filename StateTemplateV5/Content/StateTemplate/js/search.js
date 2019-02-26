@@ -4,7 +4,7 @@
 
 // Google Analytics
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-20973992-20']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
+_gaq.push(['_setAccount', 'UA-3419582-2']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
 _gaq.push(['_gat._anonymizeIp']);
 _gaq.push(['_setDomainName', '.ca.gov']);
 _gaq.push(['_trackPageview']);
@@ -36,10 +36,7 @@ _gaq.push(['b._trackPageview']);
         var $searchText = $searchContainer.find(".gsc-input");
         var $resultsContainer = $('.search-results-container');
         var $body = $("body");
-
-        // search icon is added before search button (search button is set to opacity 0 in css)
-        $("input.gsc-search-button").before("<span class='ca-gov-icon-search search-icon' aria-hidden='true'></span>");
-        $("button.gsc-search-button").before("<span class='ca-gov-icon-search search-icon' aria-hidden='true'></span>");
+        
 
         $searchText.on("click", function () {
             addSearchResults();
@@ -57,7 +54,7 @@ _gaq.push(['b._trackPageview']);
         //	$('.gsc-search-button').innerHTML
 
         $('.top-level-nav .nav-item .ca-gov-icon-search, #nav-item-search').parents('.nav-item').on('click', function (e) {
-            $searchText.focus().trigger('focus')
+            $searchText.focus().trigger('focus');
 
             // let the user know the input box is where they should search
             $(".primary #head-search").addClass('play-animation').one(

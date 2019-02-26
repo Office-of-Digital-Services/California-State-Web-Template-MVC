@@ -131,16 +131,27 @@
   <ItemGroup>
     <Content Include="Content\site.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
+    <Content Include="Content\StateTemplate\css\cagov.core.min.css" />
     <Content Include="Content\StateTemplate\css\cagov.font-only.css" />
+    <Content Include="Content\StateTemplate\css\cagov.font-only.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-eureka.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-eureka.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-mono.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-mono.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-oceanside.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-orangecounty.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-orangecounty.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-pasorobles.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-pasorobles.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-sacramento.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-sacramento.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-santabarbara.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-santabarbara.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-sierra.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-sierra.min.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-trinity.css" />
+    <Content Include="Content\StateTemplate\css\colorscheme-trinity.min.css" />
     <Content Include="Content\StateTemplate\favicon.ico" />
     <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
     <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
@@ -159,6 +170,7 @@
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_sprite%402x.png" />
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_sprite.png" />
     <Content Include="Content\StateTemplate\images\favicon.ico" />
+    <Content Include="Content\StateTemplate\images\structure.jpg" />
     <Content Include="Content\StateTemplate\images\template-logo.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-114x114.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-144x144.png" />
@@ -219,6 +231,7 @@
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-two-col.png" />
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon.png" />
     <Content Include="Content\StateTemplate\js\cagov.core.js" />
+    <Content Include="Content\StateTemplate\js\cagov.core.min.js" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
@@ -226,8 +239,6 @@
     <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
-    <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
-    <Content Include="Content\StateTemplate\js\libs\modernizr-3.6.0.min.js" />
     <Content Include="Content\StateTemplate\js\libs\Plotly.js" />
     <Content Include="Content\StateTemplate\js\libs\respond.min.js" />
     <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
@@ -332,8 +343,6 @@
     <Content Include="Content\StateTemplate\sample\images\_notes\dwsync.xml" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\StateTemplate\fonts\CaGov.eot" />
     <Content Include="Content\StateTemplate\fonts\CaGov.ttf" />
     <Content Include="Content\StateTemplate\fonts\CaGov.woff" />
@@ -347,10 +356,6 @@
     <Content Include="Content\StateTemplate\sample\configs\line.json" />
     <Content Include="Content\StateTemplate\sample\configs\pie.csv" />
     <Content Include="Content\StateTemplate\sample\configs\pie.json" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -417,7 +422,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

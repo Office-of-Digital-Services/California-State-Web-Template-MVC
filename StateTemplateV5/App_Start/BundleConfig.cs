@@ -9,7 +9,6 @@ namespace StateTemplateV5
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateLibJs").Include(
-                     "~/Content/StateTemplate/js/libs/modernizr-3.6.0.min.js",
                      "~/Content/StateTemplate/js/libs/jquery-3.2.1.min.js",
                      "~/Content/StateTemplate/js/libs/jquery-migrate-3.0.1.min.js"));
 
