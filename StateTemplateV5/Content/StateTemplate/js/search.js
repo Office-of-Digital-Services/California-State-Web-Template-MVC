@@ -36,7 +36,6 @@ _gaq.push(['b._trackPageview']);
         var $searchText = $searchContainer.find(".gsc-input");
         var $resultsContainer = $('.search-results-container');
         var $body = $("body");
-        
 
         $searchText.on("click", function () {
             addSearchResults();

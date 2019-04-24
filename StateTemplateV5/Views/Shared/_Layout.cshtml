@@ -9,7 +9,7 @@
 <head>
     <!--
         California State Template
-        Version 5.0.4
+        Version 5.0.6
 
         Based on Twitter Bootstrap
     -->
@@ -34,16 +34,18 @@
     <!--[if (lt IE 9) & (!IEMobile)]>
     <script src="~/Content/StateTemplate/js/libs/selectivizr-min.js"></script>
     <![endif]-->
-    <!-- For iPad 3-->
-    <link rel="apple-touch-icon" sizes="144x144" href="~/Content/StateTemplate/images/template2014/apple-touch-icon-144x144.png">
-    <!-- For iPhone 4 -->
-    <link rel="apple-touch-icon" sizes="114x114" href="~/Content/StateTemplate/images/template2014/apple-touch-icon-114x114.png">
-    <!-- For iPad 1-->
-    <link rel="apple-touch-icon" sizes="72x72" href="~/Content/StateTemplate/images/template2014/apple-touch-icon-72x72.png">
-    <!-- For iPhone 3G, iPod Touch and Android -->
-    <link rel="apple-touch-icon" href="~/Content/StateTemplate/images/template2014/apple-touch-icon-57x57.png">
-    <!-- For Nokia -->
-    <link rel="shortcut icon" href="~/Content/StateTemplate/images/template2014/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="100x100" href="~/Content/StateTemplate/images/apple-touch-icon-precomposed.png">
+    <link rel="icon" sizes="192x192" href="~/Content/StateTemplate/images/apple-touch-icon-192x192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="~/Content/StateTemplate/images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="~/Content/StateTemplate/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/StateTemplate/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="~/Content/StateTemplate/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/StateTemplate/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/StateTemplate/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="~/Content/StateTemplate/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" href="~/Content/StateTemplate/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="~/Content/StateTemplate/images/apple-touch-icon-57x57.png">
+
     <!-- For everything else -->
     <link rel="shortcut icon" href="~/Content/StateTemplate/favicon.ico">
     <!-- Activate ClearType for Mobile IE -->
@@ -75,32 +77,27 @@
 
 
         <!-- Utility Header -->
+
+
         <div class="utility-header">
             <div class="container">
-                <div class="group">
-                    <div class="half">
-
-                        <ul class="utility-links social-media-links">
-                            <li><div class="header-cagov-logo"><a href="/"><img src="/Content/stateTemplate/images/Ca-Gov-Logo-Gold.svg" alt="CA.gov" /></a></div></li>
-                            <li><a href="/"><span class="ca-gov-icon-home" aria-hidden="true"></span><span class="sr-only">Home</span></a></li>
-
-
-                            <li><a class="ca-gov-icon-facebook" title="Share via Facebook"><span class="sr-only">Facebook</span></a></li>
-                            <li><a class="ca-gov-icon-twitter" title="Share via Twitter"><span class="sr-only">Twitter</span></a></li>
-                            <li><a class="ca-gov-icon-google-plus" title="Share via Google+"><span class="sr-only">Google+</span></a></li>
-                            <li><a class="ca-gov-icon-email" title="Share via email"><span class="sr-only">Email</span></a></li>
-                        </ul>
+                <div class="group flex-row">
+                    <div class="social-media-links">
+                        <div class="header-cagov-logo"><a href="https://ca.gov"><span class="sr-only">CA.gov</span><img src="/Content/stateTemplate/images/Ca-Gov-Logo-Gold.svg" class="pos-rel" alt="" aria-hidden="true" /></a></div>
+                        <a href="/" class="ca-gov-icon-home"><span class="sr-only">Home</span></a>
+                        <a href="/" class="ca-gov-icon-facebook"><span class="sr-only">Facebook</span></a>
+                        <a href="/" class="ca-gov-icon-twitter"><span class="sr-only">Twitter</span></a>
+                        <a href="/" class="ca-gov-icon-email"><span class="sr-only">Email</span></a>
                     </div>
-                    <div class="half settings-links p-t-sm">
-                        <ul class="utility-links ">
-                            <li><a href="">Contact Us</a></li>
-                            <li><button class="btn btn-xs btn-primary" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
-
-                        </ul>
+                    <div class="settings-links">
+                        <a href="/contact.html"><span class="ca-gov-icon-person" aria-hidden="true"></span> Log in</a>
+                        <button class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#siteSettings" aria-expanded="false" aria-controls="siteSettings"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <!--  Settings Bar -->
         <div class="site-settings section section-standout collapse collapsed" role="alert" id="siteSettings">
             <div class="container  p-y">
@@ -113,18 +110,16 @@
 
                 <div class="btn-group" role="group" aria-label="textSizeMode">
                     <div class="btn-group"><button type="button" class="btn btn-standout resetTextSize">Reset</button></div>
-                    <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <small class="ca-gov-icon-plus-line"></small></span></button></div>
-                    <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <small class="ca-gov-icon-minus-line"></small></span></button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <span class="sr-only">Increase</span><span class="ca-gov-icon-plus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <span class="sr-only">Decrease</span><span class="ca-gov-icon-minus-line font-size-sm" aria-hidden="true"></span></span></button></div>
                 </div>
-
-
             </div>
         </div>
 
 
         <!-- Branding -->
         <div class="branding">
-            <div class="header-organization-banner"><a href="/"><img src="/Content/stateTemplate/images/template-logo.png" alt="Organization Title" /></a></div>
+            <div class="header-organization-banner"><a href="/"><img src="/Content/stateTemplate/images/template-logo.png" alt="State of California Website Template logo" /></a></div>
         </div>
 
 
@@ -133,10 +128,16 @@
             <span class="mobile-control-group mobile-header-icons">
                 <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
             </span>
-            <div class="mobile-control-group main-nav-icons pull-right">
-                <button class="mobile-control toggle-menu pull-right" aria-expanded="false" aria-controls="navigation"><span class="ca-gov-icon-menu" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
+            <div class="mobile-control-group main-nav-icons float-right">
+                <button id="nav-icon3" class="mobile-control toggle-menu float-right" aria-expanded="false" aria-controls="navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="sr-only">Menu</span>
+                </button>
                 <button class="mobile-control toggle-search">
-                    <span class="ca-gov-icon-search" aria-hidden="true"></span><span class="sr-only">Search</span>
+                    <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
                 </button>
             </div>
         </div>
@@ -150,7 +151,7 @@
             <!-- Top Level Navigation Only -->
             <nav id="navigation" class="main-navigation singlelevelnav">
                 <ul id="nav_list" class="top-level-nav">
-                    <li  class="home-link nav-item">
+                    <li class="home-link nav-item">
                         <a href="/" class="first-level-link"><span id="nav_home_container" class="ca-gov-icon-home" aria-hidden="true"></span>Home</a>
                     </li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active nav-item" : "nav-item")">
@@ -170,7 +171,7 @@
                         <a href="@Url.Action("Contact", "Home")" class="first-level-link"><span class="ca-gov-icon-lightbulb" aria-hidden="true"></span>Contact Us</a>
                     </li>
                     <li class="nav-item" id="nav-item-search">
-                        <a href="javascript:;" class="first-level-link"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+                        <a href="javascript:;" class="first-level-link" aria-label="Search Button"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
                     </li>
                 </ul>
             </nav>
@@ -186,7 +187,14 @@
                     s[s.length - 1].parentNode.insertBefore(gcse, s[s.length - 1]);
                 </script>
                 <!-- Google Custom Search -->
-                <gcse:searchbox-only resultsUrl="~/Home/serp" enableAutoComplete="true"></gcse:searchbox-only>
+                <div class="container">
+                    <form id="Search" class="pos-rel" action="@Url.Action("serp", "Home")">
+                        <span class="sr-only" id="SearchInput">Custom Google Search</span>
+                        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Custom Search" class="height-50 border-0 p-x-sm w-100" />
+                        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
+                        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -210,14 +218,13 @@
                         <li><a href="/">Conditions of Use</a></li>
                         <li><a href="/">Privacy Policy</a></li>
                         <li><a href="/">Accessibility</a></li>
-                        <li><a href="/">Contact Us</a></li>
+                        <li><a href="/">Contact</a></li>
                     </ul>
                 </div>
                 <div class="quarter text-right">
                     <ul class="socialsharer-container">
                         <li><a href="https://www.flickr.com/groups/californiagovernment"><span class="ca-gov-icon-flickr" aria-hidden="true"></span><span class="sr-only">Flickr</span></a></li>
                         <li><a href="https://www.pinterest.com/cagovernment/"><span class="ca-gov-icon-pinterest" aria-hidden="true"></span><span class="sr-only">Pinterest</span></a></li>
-                        <li><a href="https://twitter.com/cagovernment"><span class="ca-gov-icon-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span></a></li>
                         <li><a href="https://www.youtube.com/user/californiagovernment"><span class="ca-gov-icon-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span></a></li>
                     </ul>
                 </div>

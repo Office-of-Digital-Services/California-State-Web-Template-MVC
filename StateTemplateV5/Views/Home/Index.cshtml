@@ -23,6 +23,7 @@
                         <div class="input-group-addon d-flex">
                             <i class="ca-gov-icon-person"></i>
                         </div>
+                        <label for="email" class="sr-only">Email</label>
                         <input id="email" class="form-control" type="text" placeholder="Enter Your Email">
                     </div>
 
@@ -30,6 +31,7 @@
                         <div class="input-group-addon d-flex">
                             <i class="ca-gov-icon-key"></i>
                         </div>
+                        <label for="password" class="sr-only">Password</label>
                         <input id="password" class="form-control" type="password" placeholder="Enter Your Password">
                     </div>
 
@@ -38,12 +40,12 @@
                 </div>
                 <div class="row">
                     <div class="half">
-                        <label class="form-check-inline p-l-md m-l-0 m-r-md">
-                            <input class="hidden-up pos-abs" type="checkbox">
+                        <label class="form-check-inline p-l-md m-l-0 m-r-md" for="remebmer">
+                            <input class="hidden-up pos-abs" type="checkbox" id="remebmer">
                             <div class="check-icon-checkbox">
                                 <i class="ca-gov-icon-check-mark"></i>
                             </div>
-                            Remember me
+                            Remember me <span class="sr-only">checkbox</span>
                         </label>
 
                     </div>
@@ -53,12 +55,12 @@
                 </div>
                 <div class="row m-t-md m-b-md text-center">
                     <div class="offset-sm-2 col-sm-8">
-                        <input type="submit" value="Log in" class="btn btn-lg btn-primary full-width" />
+                        <button type="submit" class="btn btn-lg btn-primary full-width">Log in</button>
                     </div>
                 </div>
 
                 <div class="row m-t-md justify-content-center">
-                        <small class="text-center">Not registered yet?</small>
+                    <small class="text-center">Not registered yet?</small>
                 </div>
                 <div class="row m-t justify-content-center">
                     <a href="#" class="btn btn-default">Register</a>
