@@ -1,5 +1,5 @@
 /**
- * CA State Template v5.5 -  @version v5.5.3 -  4/15/2019 
+ * CA State Template v5 -  @version v5.0.7 -  5/23/2019 
   STYLES COMPILED FROM SOURCE (SCSS) DO NOT MODIFY */
 /* -----------------------------------------
    OCEANSIDE
@@ -80,13 +80,6 @@
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
-  .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
-    border: 1px solid #046B99;
-    color: #046B99;
-  }
-}
-
 .global-header {
   /* Default header pattern */
   /* Small screen gets solid color */
@@ -125,10 +118,6 @@ h1 span[class^="ca-gov-icon-"]:first-child {
   background: #fff;
 }
 
-.toggle-menu span {
-  background-color: #046B99 !important;
-}
-
 .mobile-control {
   color: #046B99;
 }
@@ -148,25 +137,11 @@ h1 span[class^="ca-gov-icon-"]:first-child {
   background-color: #F5F9FB;
 }
 
-.nav-item.active > a {
+.nav-item.active > a, .nav-item:hover > a {
   color: #046B99;
 }
 
-.nav-item.active > a > span[class^="ca-gov-icon"] {
-  color: #046B99;
-}
-
-@media (min-width: 768px) {
-  .nav-item:hover, .nav-item:focus {
-    background-color: #F5F9FB;
-  }
-}
-
-.nav-item:hover > a, .nav-item:focus > a {
-  color: #046B99;
-}
-
-.nav-item:hover > a > span[class^="ca-gov-icon"], .nav-item:focus > a > span[class^="ca-gov-icon"] {
+.nav-item.active > a > span[class^="ca-gov-icon"], .nav-item:hover > a > span[class^="ca-gov-icon"] {
   color: #046B99;
 }
 
@@ -199,8 +174,8 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 
 .second-level-nav > li {
   border: 1px solid transparent;
-  border-right: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-right: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .second-level-nav > li:hover, .second-level-nav > li:focus {
@@ -222,6 +197,9 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 }
 
 .sub-nav {
+  border-bottom: 5px solid #046B99;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
   background: #F5F9FB;
 }
 
@@ -241,12 +219,12 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 }
 
 .nav-media .media {
-  border-bottom: 4px solid #fff;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 @media (max-width: 767px) {
   .nav-media .media {
-    border-bottom: 4px solid #fff;
+    border-bottom: 1px solid #E1F2F7;
   }
   .nav-media .media:hover, .nav-media .media:focus {
     background: #fcfdfe;
@@ -260,20 +238,6 @@ h1 span[class^="ca-gov-icon-"]:first-child {
   .nav-item:hover::after, .nav-item:focus::after {
     background-color: #046B99;
   }
-  /*full width navigation*/
-  .nav-full-width {
-    background: #046B99;
-  }
-  .nav-full-width .main-navigation .nav-item:hover, .nav-full-width .main-navigation .nav-item:focus, .nav-full-width .main-navigation .nav-item.active:hover {
-    background-color: #034f71;
-  }
-  .nav-full-width .main-navigation .nav-item.active {
-    background-color: #035a80;
-  }
-}
-
-.has-sub .rotate {
-  color: #50aee4;
 }
 
 /* -----------------------------------------
@@ -298,7 +262,13 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 }
 
 .search-container.active {
-  background: rgba(0, 0, 0, 0.7);
+  background: #d6d6d6;
+}
+
+@media (min-width: 768px) {
+  .search-container.active {
+    border-bottom: 2px solid #d6d6d6;
+  }
 }
 
 .search-container.active .submit-container button {
@@ -308,6 +278,380 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 
 .search-container.active .search-textfield {
   border-color: #bdbdbd;
+}
+
+.search-container.featured-search {
+  background: none;
+}
+
+.search-container.featured-search:hover, .search-container.featured-search:focus {
+  background: none;
+}
+
+.search-container.featured-search.active {
+  background: #d6d6d6;
+}
+
+/* -----------------------------------------
+   PANELS
+   /source/scss/colorscheme/cs-panels.scss
+----------------------------------------- */
+/* Default Panels */
+.panel-default {
+  border-color: #ddd;
+}
+
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+.panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333333;
+}
+
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+.panel-default .panel-heading h2 span[class^="ca-gov-icon-"], .panel-default .panel-heading h3 span[class^="ca-gov-icon-"], .panel-default .panel-heading h4 span[class^="ca-gov-icon-"], .panel-default .panel-heading h5 span[class^="ca-gov-icon-"] {
+  color: #323A45;
+}
+
+.panel-default .panel-heading .options .btn-default {
+  color: #212529;
+  background-color: #fcfcfc;
+  border-color: #ddd;
+}
+
+.panel-default .panel-heading .options .btn-default:hover {
+  color: #212529;
+  background-color: #e9e9e9;
+  border-color: #c4c4c4;
+}
+
+.panel-default .panel-heading .options .btn-default:focus, .panel-default .panel-heading .options .btn-default.focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
+}
+
+.panel-default .panel-heading .options .btn-default.disabled, .panel-default .panel-heading .options .btn-default:disabled {
+  color: #212529;
+  background-color: #fcfcfc;
+  border-color: #ddd;
+}
+
+.panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
+.show > .panel-default .panel-heading .options .btn-default.dropdown-toggle {
+  color: #212529;
+  background-color: #e3e3e3;
+  border-color: #bdbdbd;
+}
+
+.panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .panel-default .panel-heading .options .btn-default.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
+}
+
+.panel-default .panel-body {
+  background: #fff;
+  color: #333333;
+}
+
+/* Overstated Panels */
+.panel-overstated {
+  border-color: #ddd;
+}
+
+.panel-overstated > .panel-heading {
+  color: #fff;
+  background-color: #046B99;
+  border-color: #034867;
+}
+
+.panel-overstated > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+.panel-overstated > .panel-heading .badge {
+  color: #046B99;
+  background-color: #fff;
+}
+
+.panel-overstated > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+.panel-overstated .panel-heading {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.panel-overstated .panel-heading h2 span[class^="ca-gov-icon-"], .panel-overstated .panel-heading h3 span[class^="ca-gov-icon-"], .panel-overstated .panel-heading h4 span[class^="ca-gov-icon-"], .panel-overstated .panel-heading h5 span[class^="ca-gov-icon-"] {
+  color: #fff;
+}
+
+.panel-overstated .panel-heading .options .btn-default {
+  color: #fff;
+  background-color: #034f71;
+  border-color: #034867;
+}
+
+.panel-overstated .panel-heading .options .btn-default:hover {
+  color: #fff;
+  background-color: #02354c;
+  border-color: #012536;
+}
+
+.panel-overstated .panel-heading .options .btn-default:focus, .panel-overstated .panel-heading .options .btn-default.focus {
+  box-shadow: 0 0 0 0.2rem rgba(41, 100, 126, 0.5);
+}
+
+.panel-overstated .panel-heading .options .btn-default.disabled, .panel-overstated .panel-heading .options .btn-default:disabled {
+  color: #fff;
+  background-color: #034f71;
+  border-color: #034867;
+}
+
+.panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
+.show > .panel-overstated .panel-heading .options .btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: #022c40;
+  border-color: #011d29;
+}
+
+.panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .panel-overstated .panel-heading .options .btn-default.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(41, 100, 126, 0.5);
+}
+
+.panel-overstated .panel-body {
+  background: #fff;
+  color: #333333;
+}
+
+.panel-overstated .panel-body a:not(.btn) {
+  color: #046B99;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.panel-overstated .panel-body a:not(.btn):hover, .panel-overstated .panel-body a:not(.btn):focus {
+  color: #02374e;
+  text-decoration: underline;
+}
+
+.panel-overstated .panel-body a:not(.btn):focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.panel-overstated .panel-body a:not(.btn) {
+  background-image: linear-gradient(to right, #046B99 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+  background-position: center bottom 4%;
+  background-origin: padding-box;
+  text-decoration: none !important;
+}
+
+.panel-overstated .panel-body a:not(.btn):hover {
+  background-image: linear-gradient(to right, #02374e 50%, transparent 50%);
+  text-decoration: none !important;
+}
+
+/* Uderstated Panels */
+.panel-understated {
+  border-color: #ddd;
+}
+
+.panel-understated > .panel-heading {
+  color: #333333;
+  background-color: #E1F2F7;
+  border-color: #ddd;
+}
+
+.panel-understated > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+.panel-understated > .panel-heading .badge {
+  color: #E1F2F7;
+  background-color: #333333;
+}
+
+.panel-understated > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+.panel-understated .panel-heading {
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+}
+
+.panel-understated .panel-heading h2 span[class^="ca-gov-icon-"], .panel-understated .panel-heading h3 span[class^="ca-gov-icon-"], .panel-understated .panel-heading h4 span[class^="ca-gov-icon-"], .panel-understated .panel-heading h5 span[class^="ca-gov-icon-"] {
+  color: #323A45;
+}
+
+.panel-understated .panel-heading .options .btn-default {
+  color: #212529;
+  background-color: #c1e4ee;
+  border-color: #ddd;
+}
+
+.panel-understated .panel-heading .options .btn-default:hover {
+  color: #212529;
+  background-color: #a3d7e6;
+  border-color: #c4c4c4;
+}
+
+.panel-understated .panel-heading .options .btn-default:focus, .panel-understated .panel-heading .options .btn-default.focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
+}
+
+.panel-understated .panel-heading .options .btn-default.disabled, .panel-understated .panel-heading .options .btn-default:disabled {
+  color: #212529;
+  background-color: #c1e4ee;
+  border-color: #ddd;
+}
+
+.panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
+.show > .panel-understated .panel-heading .options .btn-default.dropdown-toggle {
+  color: #212529;
+  background-color: #99d3e4;
+  border-color: #bdbdbd;
+}
+
+.panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .panel-understated .panel-heading .options .btn-default.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
+}
+
+.panel-understated .panel-body {
+  background: #fff;
+  color: #333333;
+}
+
+/* Standout Panels */
+.panel-standout {
+  border-color: #ddd;
+}
+
+.panel-standout > .panel-heading {
+  color: #fff;
+  background-color: #323A45;
+  border-color: #FDB81E;
+}
+
+.panel-standout > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+.panel-standout > .panel-heading .badge {
+  color: #323A45;
+  background-color: #fff;
+}
+
+.panel-standout > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+.panel-standout .panel-heading {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.panel-standout .panel-heading h2 span[class^="ca-gov-icon-"], .panel-standout .panel-heading h3 span[class^="ca-gov-icon-"], .panel-standout .panel-heading h4 span[class^="ca-gov-icon-"], .panel-standout .panel-heading h5 span[class^="ca-gov-icon-"] {
+  color: #FDB81E;
+}
+
+.panel-standout .panel-heading .options .btn-default {
+  color: #fff;
+  background-color: #21262d;
+  border-color: #272e36;
+}
+
+.panel-standout .panel-heading .options .btn-default:hover {
+  color: #fff;
+  background-color: #111317;
+  border-color: #121519;
+}
+
+.panel-standout .panel-heading .options .btn-default:focus, .panel-standout .panel-heading .options .btn-default.focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 77, 84, 0.5);
+}
+
+.panel-standout .panel-heading .options .btn-default.disabled, .panel-standout .panel-heading .options .btn-default:disabled {
+  color: #fff;
+  background-color: #21262d;
+  border-color: #272e36;
+}
+
+.panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
+.show > .panel-standout .panel-heading .options .btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: #0b0d10;
+  border-color: #0d0f11;
+}
+
+.panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .panel-standout .panel-heading .options .btn-default.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 77, 84, 0.5);
+}
+
+.panel-standout .panel-body {
+  background: #fff;
+  color: #333333;
+}
+
+.panel-standout .panel-body a:not(.btn) {
+  color: #046B99;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.panel-standout .panel-body a:not(.btn):hover, .panel-standout .panel-body a:not(.btn):focus {
+  color: #02374e;
+  text-decoration: underline;
+}
+
+.panel-standout .panel-body a:not(.btn):focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.panel-standout .panel-body a:not(.btn) {
+  background-image: linear-gradient(to right, #046B99 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+  background-position: center bottom 4%;
+  background-origin: padding-box;
+  text-decoration: none !important;
+}
+
+.panel-standout .panel-body a:not(.btn):hover {
+  background-image: linear-gradient(to right, #02374e 50%, transparent 50%);
+  text-decoration: none !important;
+}
+
+/* Adds triangle to panel */
+.panel-standout.highlight .panel-heading .triangle {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #FDB81E;
 }
 
 /* -----------------------------------------
@@ -372,6 +716,8 @@ figure {
 .section-overstated a:not(.btn), .card-overstated a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .section-overstated a:not(.btn):hover, .section-overstated a:not(.btn):focus, .card-overstated a:not(.btn):hover, .card-overstated a:not(.btn):focus {
@@ -459,6 +805,8 @@ figure {
 .section-standout a:not(.btn), .card-standout a:not(.btn) {
   color: #50aee4;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .section-standout a:not(.btn):hover, .section-standout a:not(.btn):focus, .card-standout a:not(.btn):hover, .card-standout a:not(.btn):focus {
@@ -546,6 +894,10 @@ figure {
   background-color: #fff;
 }
 
+.section-standout code, .card-standout code {
+  color: #fff;
+}
+
 .section-impact, .card-impact {
   background: #323A45;
   color: #ffffff;
@@ -554,6 +906,8 @@ figure {
 .section-impact a:not(.btn), .card-impact a:not(.btn) {
   color: #50aee4;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .section-impact a:not(.btn):hover, .section-impact a:not(.btn):focus, .card-impact a:not(.btn):hover, .card-impact a:not(.btn):focus {
@@ -681,6 +1035,8 @@ figure {
 .section-primary a:not(.btn), .card-primary a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .section-primary a:not(.btn):hover, .section-primary a:not(.btn):focus, .card-primary a:not(.btn):hover, .card-primary a:not(.btn):focus {
@@ -768,6 +1124,8 @@ figure {
 .section-inverted a:not(.btn), .card-inverted a:not(.btn) {
   color: #50aee4;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .section-inverted a:not(.btn):hover, .section-inverted a:not(.btn):focus, .card-inverted a:not(.btn):hover, .card-inverted a:not(.btn):focus {
@@ -855,6 +1213,8 @@ figure {
 .section-danger a:not(.btn), .card-danger a:not(.btn) {
   color: #000;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .section-danger a:not(.btn):hover, .section-danger a:not(.btn):focus, .card-danger a:not(.btn):hover, .card-danger a:not(.btn):focus {
@@ -882,9 +1242,15 @@ figure {
   text-decoration: none !important;
 }
 
+.bg-highlight {
+  color: #000;
+}
+
 .bg-highlight a:not(.btn) {
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .bg-highlight a:not(.btn):hover, .bg-highlight a:not(.btn):focus {
@@ -919,6 +1285,8 @@ figure {
 .bg-primary a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .bg-primary a:not(.btn):hover, .bg-primary a:not(.btn):focus {
@@ -953,6 +1321,8 @@ figure {
 .bg-standout a:not(.btn) {
   color: #50aee4;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .bg-standout a:not(.btn):hover, .bg-standout a:not(.btn):focus {
@@ -1005,11 +1375,13 @@ a.text-white:not(.btn):hover {
 /* HEADER SLIDESHOW */
 .header-slideshow-banner {
   position: relative;
+  height: 500px;
   background: #000;
   /* Adjusting the height of the banner controls */
 }
 
 .header-slideshow-banner .banner-pager, .header-slideshow-banner .banner-play-pause {
+  top: 350px;
   z-index: 1;
 }
 
@@ -1023,6 +1395,7 @@ a.text-white:not(.btn):hover {
 @media (max-width: 767px) {
   .header-slideshow-banner {
     display: block;
+    height: 160px;
   }
   .header-slideshow-banner #primary-carousel {
     margin: 0;
@@ -1192,6 +1565,8 @@ a.text-white:not(.btn):hover {
 .testimonial-overstated a:not(.btn) {
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .testimonial-overstated a:not(.btn):hover, .testimonial-overstated a:not(.btn):focus {
@@ -1231,6 +1606,8 @@ a.text-white:not(.btn):hover {
 .testimonial-standout a:not(.btn) {
   color: #FDB81E;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .testimonial-standout a:not(.btn):hover, .testimonial-standout a:not(.btn):focus {
@@ -1270,6 +1647,8 @@ a.text-white:not(.btn):hover {
 .testimonial-primary a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .testimonial-primary a:not(.btn):hover, .testimonial-primary a:not(.btn):focus {
@@ -1309,6 +1688,8 @@ a.text-white:not(.btn):hover {
 .testimonial-highlight a:not(.btn) {
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .testimonial-highlight a:not(.btn):hover, .testimonial-highlight a:not(.btn):focus {
@@ -1348,6 +1729,8 @@ a.text-white:not(.btn):hover {
 .testimonial-inverted a:not(.btn) {
   color: #FDB81E;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .testimonial-inverted a:not(.btn):hover, .testimonial-inverted a:not(.btn):focus {
@@ -1387,6 +1770,8 @@ a.text-white:not(.btn):hover {
 .testimonial-danger a:not(.btn) {
   color: #000;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .testimonial-danger a:not(.btn):hover, .testimonial-danger a:not(.btn):focus {
@@ -1422,6 +1807,22 @@ a.text-white:not(.btn):hover {
    CARDS
    /source/scss/colorscheme/cs-cards.scss
 ----------------------------------------- */
+.card-default {
+  background-color: white;
+  border-color: #d6d6d6;
+  color: #000000;
+}
+
+.card-default .card-header {
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #f2f2f2;
+}
+
+.card-default .card-footer {
+  border-top: 1px solid #d6d6d6;
+  background-color: #f2f2f2;
+}
+
 .card-primary {
   background-color: #046B99;
   border-color: #046B99;
@@ -1431,6 +1832,8 @@ a.text-white:not(.btn):hover {
 .card-primary a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .card-primary a:not(.btn):hover, .card-primary a:not(.btn):focus {
@@ -1468,6 +1871,90 @@ a.text-white:not(.btn):hover {
   background-color: #035a80;
 }
 
+.card-understated {
+  background-color: #E1F2F7;
+  border-color: #cde9f2;
+  color: #000000;
+}
+
+.card-understated .card-header {
+  border-bottom: 1px solid #cde9f2;
+  background-color: #cde9f2;
+}
+
+.card-understated .card-footer {
+  border-top: 1px solid #cde9f2;
+  background-color: #cde9f2;
+}
+
+.card-overstated {
+  background-color: #50aee4;
+  border-color: #2d9edf;
+  color: #000000;
+}
+
+.card-overstated a:not(.btn) {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.card-overstated a:not(.btn):hover, .card-overstated a:not(.btn):focus {
+  color: #FDB81E;
+  text-decoration: underline;
+}
+
+.card-overstated a:not(.btn):focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.card-overstated .card-header {
+  border-bottom: 1px solid #2d9edf;
+  background-color: #3aa4e1;
+}
+
+.card-overstated .card-footer {
+  border-top: 1px solid #2d9edf;
+  background-color: #3aa4e1;
+}
+
+.card-standout {
+  background-color: #323A45;
+  border-color: #21262d;
+  color: #ffffff;
+}
+
+.card-standout a:not(.btn) {
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.card-standout a:not(.btn):hover, .card-standout a:not(.btn):focus {
+  color: #FDB81E;
+  text-decoration: underline;
+}
+
+.card-standout a:not(.btn):focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.card-standout .card-header {
+  border-bottom: 1px solid #21262d;
+  background-color: #272e36;
+}
+
+.card-standout .card-footer {
+  border-top: 1px solid #21262d;
+  background-color: #272e36;
+}
+
 .card-inverted, .card-inverse {
   background-color: #000000;
   border-color: #000000;
@@ -1477,6 +1964,8 @@ a.text-white:not(.btn):hover {
 .card-inverted a:not(.btn), .card-inverse a:not(.btn) {
   color: #50aee4;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .card-inverted a:not(.btn):hover, .card-inverted a:not(.btn):focus, .card-inverse a:not(.btn):hover, .card-inverse a:not(.btn):focus {
@@ -1523,6 +2012,8 @@ a.text-white:not(.btn):hover {
 .card-success a:not(.btn) {
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .card-success a:not(.btn):hover, .card-success a:not(.btn):focus {
@@ -1569,6 +2060,8 @@ a.text-white:not(.btn):hover {
 .card-info a:not(.btn) {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .card-info a:not(.btn):hover, .card-info a:not(.btn):focus {
@@ -1615,6 +2108,8 @@ a.text-white:not(.btn):hover {
 .card-warning a:not(.btn) {
   color: #333333;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .card-warning a:not(.btn):hover, .card-warning a:not(.btn):focus {
@@ -1661,6 +2156,8 @@ a.text-white:not(.btn):hover {
 .card-danger a:not(.btn) {
   color: #000;
   text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .card-danger a:not(.btn):hover, .card-danger a:not(.btn):focus {
@@ -1704,404 +2201,6 @@ a.text-white:not(.btn):hover {
 
 .card-inverse .card-footer, .card-inverted .card-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* -----------------------------------------
-   CARDS THAT USED TO BE PANELS IN BOOTSTRAP 3
-   leaving .panel class for backward compatibility
------------------------------------------ */
-/* Default Cards */
-.panel-default, .card-default {
-  border-color: #ddd;
-}
-
-.panel-default > .panel-heading, .panel-default > .card-heading, .card-default > .panel-heading, .card-default > .card-heading {
-  color: #333333;
-  background-color: #f5f5f5;
-  border-color: #ddd;
-}
-
-.panel-default > .panel-heading + .panel-collapse > .panel-body, .panel-default > .panel-heading + .card-collapse > .card-body, .panel-default > .card-heading + .panel-collapse > .panel-body, .panel-default > .card-heading + .card-collapse > .card-body, .card-default > .panel-heading + .panel-collapse > .panel-body, .card-default > .panel-heading + .card-collapse > .card-body, .card-default > .card-heading + .panel-collapse > .panel-body, .card-default > .card-heading + .card-collapse > .card-body {
-  border-top-color: #ddd;
-}
-
-.panel-default > .panel-heading .badge, .panel-default > .card-heading .badge, .card-default > .panel-heading .badge, .card-default > .card-heading .badge {
-  color: #f5f5f5;
-  background-color: #333333;
-}
-
-.panel-default > .panel-footer + .panel-collapse > .panel-body, .panel-default > .panel-footer + .card-collapse > .card-body, .panel-default > .card-footer + .panel-collapse > .panel-body, .panel-default > .card-footer + .card-collapse > .card-body, .card-default > .panel-footer + .panel-collapse > .panel-body, .card-default > .panel-footer + .card-collapse > .card-body, .card-default > .card-footer + .panel-collapse > .panel-body, .card-default > .card-footer + .card-collapse > .card-body {
-  border-bottom-color: #ddd;
-}
-
-.panel-default .panel-heading h2 span[class^="ca-gov-icon-"], .panel-default .panel-heading h3 span[class^="ca-gov-icon-"], .panel-default .panel-heading h4 span[class^="ca-gov-icon-"], .panel-default .panel-heading h5 span[class^="ca-gov-icon-"], .panel-default .card-heading h2 span[class^="ca-gov-icon-"], .panel-default .card-heading h3 span[class^="ca-gov-icon-"], .panel-default .card-heading h4 span[class^="ca-gov-icon-"], .panel-default .card-heading h5 span[class^="ca-gov-icon-"], .panel-default .card-header h2 span[class^="ca-gov-icon-"], .panel-default .card-header h3 span[class^="ca-gov-icon-"], .panel-default .card-header h4 span[class^="ca-gov-icon-"], .panel-default .card-header h5 span[class^="ca-gov-icon-"], .card-default .panel-heading h2 span[class^="ca-gov-icon-"], .card-default .panel-heading h3 span[class^="ca-gov-icon-"], .card-default .panel-heading h4 span[class^="ca-gov-icon-"], .card-default .panel-heading h5 span[class^="ca-gov-icon-"], .card-default .card-heading h2 span[class^="ca-gov-icon-"], .card-default .card-heading h3 span[class^="ca-gov-icon-"], .card-default .card-heading h4 span[class^="ca-gov-icon-"], .card-default .card-heading h5 span[class^="ca-gov-icon-"], .card-default .card-header h2 span[class^="ca-gov-icon-"], .card-default .card-header h3 span[class^="ca-gov-icon-"], .card-default .card-header h4 span[class^="ca-gov-icon-"], .card-default .card-header h5 span[class^="ca-gov-icon-"] {
-  color: #323A45;
-}
-
-.panel-default .panel-heading .options .btn-default, .panel-default .card-heading .options .btn-default, .panel-default .card-header .options .btn-default, .card-default .panel-heading .options .btn-default, .card-default .card-heading .options .btn-default, .card-default .card-header .options .btn-default {
-  color: #212529;
-  background-color: #fcfcfc;
-  border-color: #ddd;
-}
-
-.panel-default .panel-heading .options .btn-default:hover, .panel-default .card-heading .options .btn-default:hover, .panel-default .card-header .options .btn-default:hover, .card-default .panel-heading .options .btn-default:hover, .card-default .card-heading .options .btn-default:hover, .card-default .card-header .options .btn-default:hover {
-  color: #212529;
-  background-color: #e9e9e9;
-  border-color: #c4c4c4;
-}
-
-.panel-default .panel-heading .options .btn-default:focus, .panel-default .panel-heading .options .btn-default.focus, .panel-default .card-heading .options .btn-default:focus, .panel-default .card-heading .options .btn-default.focus, .panel-default .card-header .options .btn-default:focus, .panel-default .card-header .options .btn-default.focus, .card-default .panel-heading .options .btn-default:focus, .card-default .panel-heading .options .btn-default.focus, .card-default .card-heading .options .btn-default:focus, .card-default .card-heading .options .btn-default.focus, .card-default .card-header .options .btn-default:focus, .card-default .card-header .options .btn-default.focus {
-  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
-}
-
-.panel-default .panel-heading .options .btn-default.disabled, .panel-default .panel-heading .options .btn-default:disabled, .panel-default .card-heading .options .btn-default.disabled, .panel-default .card-heading .options .btn-default:disabled, .panel-default .card-header .options .btn-default.disabled, .panel-default .card-header .options .btn-default:disabled, .card-default .panel-heading .options .btn-default.disabled, .card-default .panel-heading .options .btn-default:disabled, .card-default .card-heading .options .btn-default.disabled, .card-default .card-heading .options .btn-default:disabled, .card-default .card-header .options .btn-default.disabled, .card-default .card-header .options .btn-default:disabled {
-  color: #212529;
-  background-color: #fcfcfc;
-  border-color: #ddd;
-}
-
-.panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-default .panel-heading .options .btn-default.dropdown-toggle, .panel-default .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-default .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-default .card-heading .options .btn-default.dropdown-toggle, .panel-default .card-header .options .btn-default:not(:disabled):not(.disabled):active, .panel-default .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-default .card-header .options .btn-default.dropdown-toggle, .card-default .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-default .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-default .panel-heading .options .btn-default.dropdown-toggle, .card-default .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-default .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-default .card-heading .options .btn-default.dropdown-toggle, .card-default .card-header .options .btn-default:not(:disabled):not(.disabled):active, .card-default .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-default .card-header .options .btn-default.dropdown-toggle {
-  color: #212529;
-  background-color: #e3e3e3;
-  border-color: #bdbdbd;
-}
-
-.panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-default .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-default .panel-heading .options .btn-default.dropdown-toggle:focus, .panel-default .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-default .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-default .card-heading .options .btn-default.dropdown-toggle:focus, .panel-default .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-default .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-default .card-header .options .btn-default.dropdown-toggle:focus, .card-default .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-default .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-default .panel-heading .options .btn-default.dropdown-toggle:focus, .card-default .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-default .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-default .card-heading .options .btn-default.dropdown-toggle:focus, .card-default .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-default .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-default .card-header .options .btn-default.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
-}
-
-.panel-default .panel-body, .panel-default .card-body, .card-default .panel-body, .card-default .card-body {
-  background: #fff;
-  color: #333333;
-}
-
-/* Overstated Cards */
-.panel-overstated, .card-overstated {
-  border-color: #ddd;
-}
-
-.panel-overstated > .panel-heading, .panel-overstated > .card-heading, .card-overstated > .panel-heading, .card-overstated > .card-heading {
-  color: #fff;
-  background-color: #046B99;
-  border-color: #046B99;
-}
-
-.panel-overstated > .panel-heading + .panel-collapse > .panel-body, .panel-overstated > .panel-heading + .card-collapse > .card-body, .panel-overstated > .card-heading + .panel-collapse > .panel-body, .panel-overstated > .card-heading + .card-collapse > .card-body, .card-overstated > .panel-heading + .panel-collapse > .panel-body, .card-overstated > .panel-heading + .card-collapse > .card-body, .card-overstated > .card-heading + .panel-collapse > .panel-body, .card-overstated > .card-heading + .card-collapse > .card-body {
-  border-top-color: #ddd;
-}
-
-.panel-overstated > .panel-heading .badge, .panel-overstated > .card-heading .badge, .card-overstated > .panel-heading .badge, .card-overstated > .card-heading .badge {
-  color: #046B99;
-  background-color: #fff;
-}
-
-.panel-overstated > .panel-footer + .panel-collapse > .panel-body, .panel-overstated > .panel-footer + .card-collapse > .card-body, .panel-overstated > .card-footer + .panel-collapse > .panel-body, .panel-overstated > .card-footer + .card-collapse > .card-body, .card-overstated > .panel-footer + .panel-collapse > .panel-body, .card-overstated > .panel-footer + .card-collapse > .card-body, .card-overstated > .card-footer + .panel-collapse > .panel-body, .card-overstated > .card-footer + .card-collapse > .card-body {
-  border-bottom-color: #ddd;
-}
-
-.panel-overstated .panel-heading, .panel-overstated .card-heading, .panel-overstated .card-header, .card-overstated .panel-heading, .card-overstated .card-heading, .card-overstated .card-header {
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-}
-
-.panel-overstated .panel-heading h2 span[class^="ca-gov-icon-"], .panel-overstated .panel-heading h3 span[class^="ca-gov-icon-"], .panel-overstated .panel-heading h4 span[class^="ca-gov-icon-"], .panel-overstated .panel-heading h5 span[class^="ca-gov-icon-"], .panel-overstated .card-heading h2 span[class^="ca-gov-icon-"], .panel-overstated .card-heading h3 span[class^="ca-gov-icon-"], .panel-overstated .card-heading h4 span[class^="ca-gov-icon-"], .panel-overstated .card-heading h5 span[class^="ca-gov-icon-"], .panel-overstated .card-header h2 span[class^="ca-gov-icon-"], .panel-overstated .card-header h3 span[class^="ca-gov-icon-"], .panel-overstated .card-header h4 span[class^="ca-gov-icon-"], .panel-overstated .card-header h5 span[class^="ca-gov-icon-"], .card-overstated .panel-heading h2 span[class^="ca-gov-icon-"], .card-overstated .panel-heading h3 span[class^="ca-gov-icon-"], .card-overstated .panel-heading h4 span[class^="ca-gov-icon-"], .card-overstated .panel-heading h5 span[class^="ca-gov-icon-"], .card-overstated .card-heading h2 span[class^="ca-gov-icon-"], .card-overstated .card-heading h3 span[class^="ca-gov-icon-"], .card-overstated .card-heading h4 span[class^="ca-gov-icon-"], .card-overstated .card-heading h5 span[class^="ca-gov-icon-"], .card-overstated .card-header h2 span[class^="ca-gov-icon-"], .card-overstated .card-header h3 span[class^="ca-gov-icon-"], .card-overstated .card-header h4 span[class^="ca-gov-icon-"], .card-overstated .card-header h5 span[class^="ca-gov-icon-"] {
-  color: #fff;
-}
-
-.panel-overstated .panel-heading .options .btn-default, .panel-overstated .card-heading .options .btn-default, .panel-overstated .card-header .options .btn-default, .card-overstated .panel-heading .options .btn-default, .card-overstated .card-heading .options .btn-default, .card-overstated .card-header .options .btn-default {
-  color: #fff;
-  background-color: #034f71;
-  border-color: #046B99;
-}
-
-.panel-overstated .panel-heading .options .btn-default:hover, .panel-overstated .card-heading .options .btn-default:hover, .panel-overstated .card-header .options .btn-default:hover, .card-overstated .panel-heading .options .btn-default:hover, .card-overstated .card-heading .options .btn-default:hover, .card-overstated .card-header .options .btn-default:hover {
-  color: #fff;
-  background-color: #02354c;
-  border-color: #034867;
-}
-
-.panel-overstated .panel-heading .options .btn-default:focus, .panel-overstated .panel-heading .options .btn-default.focus, .panel-overstated .card-heading .options .btn-default:focus, .panel-overstated .card-heading .options .btn-default.focus, .panel-overstated .card-header .options .btn-default:focus, .panel-overstated .card-header .options .btn-default.focus, .card-overstated .panel-heading .options .btn-default:focus, .card-overstated .panel-heading .options .btn-default.focus, .card-overstated .card-heading .options .btn-default:focus, .card-overstated .card-heading .options .btn-default.focus, .card-overstated .card-header .options .btn-default:focus, .card-overstated .card-header .options .btn-default.focus {
-  box-shadow: 0 0 0 0.2rem rgba(42, 129, 168, 0.5);
-}
-
-.panel-overstated .panel-heading .options .btn-default.disabled, .panel-overstated .panel-heading .options .btn-default:disabled, .panel-overstated .card-heading .options .btn-default.disabled, .panel-overstated .card-heading .options .btn-default:disabled, .panel-overstated .card-header .options .btn-default.disabled, .panel-overstated .card-header .options .btn-default:disabled, .card-overstated .panel-heading .options .btn-default.disabled, .card-overstated .panel-heading .options .btn-default:disabled, .card-overstated .card-heading .options .btn-default.disabled, .card-overstated .card-heading .options .btn-default:disabled, .card-overstated .card-header .options .btn-default.disabled, .card-overstated .card-header .options .btn-default:disabled {
-  color: #fff;
-  background-color: #034f71;
-  border-color: #046B99;
-}
-
-.panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-overstated .panel-heading .options .btn-default.dropdown-toggle, .panel-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-overstated .card-heading .options .btn-default.dropdown-toggle, .panel-overstated .card-header .options .btn-default:not(:disabled):not(.disabled):active, .panel-overstated .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-overstated .card-header .options .btn-default.dropdown-toggle, .card-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-overstated .panel-heading .options .btn-default.dropdown-toggle, .card-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-overstated .card-heading .options .btn-default.dropdown-toggle, .card-overstated .card-header .options .btn-default:not(:disabled):not(.disabled):active, .card-overstated .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-overstated .card-header .options .btn-default.dropdown-toggle {
-  color: #fff;
-  background-color: #022c40;
-  border-color: #02405b;
-}
-
-.panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-overstated .panel-heading .options .btn-default.dropdown-toggle:focus, .panel-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-overstated .card-heading .options .btn-default.dropdown-toggle:focus, .panel-overstated .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-overstated .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-overstated .card-header .options .btn-default.dropdown-toggle:focus, .card-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-overstated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-overstated .panel-heading .options .btn-default.dropdown-toggle:focus, .card-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-overstated .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-overstated .card-heading .options .btn-default.dropdown-toggle:focus, .card-overstated .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-overstated .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-overstated .card-header .options .btn-default.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(42, 129, 168, 0.5);
-}
-
-.panel-overstated .panel-body, .panel-overstated .card-body, .card-overstated .panel-body, .card-overstated .card-body {
-  background: #fff;
-  color: #333333;
-}
-
-.panel-overstated .panel-body a:not(.btn), .panel-overstated .card-body a:not(.btn), .card-overstated .panel-body a:not(.btn), .card-overstated .card-body a:not(.btn) {
-  color: #046B99;
-  text-decoration: none;
-}
-
-.panel-overstated .panel-body a:not(.btn):hover, .panel-overstated .panel-body a:not(.btn):focus, .panel-overstated .card-body a:not(.btn):hover, .panel-overstated .card-body a:not(.btn):focus, .card-overstated .panel-body a:not(.btn):hover, .card-overstated .panel-body a:not(.btn):focus, .card-overstated .card-body a:not(.btn):hover, .card-overstated .card-body a:not(.btn):focus {
-  color: #02374e;
-  text-decoration: underline;
-}
-
-.panel-overstated .panel-body a:not(.btn):focus, .panel-overstated .card-body a:not(.btn):focus, .card-overstated .panel-body a:not(.btn):focus, .card-overstated .card-body a:not(.btn):focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-.panel-overstated .panel-body a:not(.btn), .panel-overstated .card-body a:not(.btn), .card-overstated .panel-body a:not(.btn), .card-overstated .card-body a:not(.btn) {
-  background-image: linear-gradient(to right, #046B99 50%, transparent 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 1px;
-  background-position: center bottom 4%;
-  background-origin: padding-box;
-  text-decoration: none !important;
-}
-
-.panel-overstated .panel-body a:not(.btn):hover, .panel-overstated .card-body a:not(.btn):hover, .card-overstated .panel-body a:not(.btn):hover, .card-overstated .card-body a:not(.btn):hover {
-  background-image: linear-gradient(to right, #02374e 50%, transparent 50%);
-  text-decoration: none !important;
-}
-
-/* Uderstated Cards */
-.panel-understated, .card-understated {
-  border-color: #ddd;
-}
-
-.panel-understated > .panel-heading, .panel-understated > .card-heading, .card-understated > .panel-heading, .card-understated > .card-heading {
-  color: #333333;
-  background-color: #E1F2F7;
-  border-color: #E1F2F7;
-}
-
-.panel-understated > .panel-heading + .panel-collapse > .panel-body, .panel-understated > .panel-heading + .card-collapse > .card-body, .panel-understated > .card-heading + .panel-collapse > .panel-body, .panel-understated > .card-heading + .card-collapse > .card-body, .card-understated > .panel-heading + .panel-collapse > .panel-body, .card-understated > .panel-heading + .card-collapse > .card-body, .card-understated > .card-heading + .panel-collapse > .panel-body, .card-understated > .card-heading + .card-collapse > .card-body {
-  border-top-color: #ddd;
-}
-
-.panel-understated > .panel-heading .badge, .panel-understated > .card-heading .badge, .card-understated > .panel-heading .badge, .card-understated > .card-heading .badge {
-  color: #E1F2F7;
-  background-color: #333333;
-}
-
-.panel-understated > .panel-footer + .panel-collapse > .panel-body, .panel-understated > .panel-footer + .card-collapse > .card-body, .panel-understated > .card-footer + .panel-collapse > .panel-body, .panel-understated > .card-footer + .card-collapse > .card-body, .card-understated > .panel-footer + .panel-collapse > .panel-body, .card-understated > .panel-footer + .card-collapse > .card-body, .card-understated > .card-footer + .panel-collapse > .panel-body, .card-understated > .card-footer + .card-collapse > .card-body {
-  border-bottom-color: #ddd;
-}
-
-.panel-understated .panel-heading, .panel-understated .card-heading, .panel-understated .card-header, .card-understated .panel-heading, .card-understated .card-heading, .card-understated .card-header {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-}
-
-.panel-understated .panel-heading h2 span[class^="ca-gov-icon-"], .panel-understated .panel-heading h3 span[class^="ca-gov-icon-"], .panel-understated .panel-heading h4 span[class^="ca-gov-icon-"], .panel-understated .panel-heading h5 span[class^="ca-gov-icon-"], .panel-understated .card-heading h2 span[class^="ca-gov-icon-"], .panel-understated .card-heading h3 span[class^="ca-gov-icon-"], .panel-understated .card-heading h4 span[class^="ca-gov-icon-"], .panel-understated .card-heading h5 span[class^="ca-gov-icon-"], .panel-understated .card-header h2 span[class^="ca-gov-icon-"], .panel-understated .card-header h3 span[class^="ca-gov-icon-"], .panel-understated .card-header h4 span[class^="ca-gov-icon-"], .panel-understated .card-header h5 span[class^="ca-gov-icon-"], .card-understated .panel-heading h2 span[class^="ca-gov-icon-"], .card-understated .panel-heading h3 span[class^="ca-gov-icon-"], .card-understated .panel-heading h4 span[class^="ca-gov-icon-"], .card-understated .panel-heading h5 span[class^="ca-gov-icon-"], .card-understated .card-heading h2 span[class^="ca-gov-icon-"], .card-understated .card-heading h3 span[class^="ca-gov-icon-"], .card-understated .card-heading h4 span[class^="ca-gov-icon-"], .card-understated .card-heading h5 span[class^="ca-gov-icon-"], .card-understated .card-header h2 span[class^="ca-gov-icon-"], .card-understated .card-header h3 span[class^="ca-gov-icon-"], .card-understated .card-header h4 span[class^="ca-gov-icon-"], .card-understated .card-header h5 span[class^="ca-gov-icon-"] {
-  color: #323A45;
-}
-
-.panel-understated .panel-heading .options .btn-default, .panel-understated .card-heading .options .btn-default, .panel-understated .card-header .options .btn-default, .card-understated .panel-heading .options .btn-default, .card-understated .card-heading .options .btn-default, .card-understated .card-header .options .btn-default {
-  color: #212529;
-  background-color: #c1e4ee;
-  border-color: #ddd;
-}
-
-.panel-understated .panel-heading .options .btn-default:hover, .panel-understated .card-heading .options .btn-default:hover, .panel-understated .card-header .options .btn-default:hover, .card-understated .panel-heading .options .btn-default:hover, .card-understated .card-heading .options .btn-default:hover, .card-understated .card-header .options .btn-default:hover {
-  color: #212529;
-  background-color: #a3d7e6;
-  border-color: #c4c4c4;
-}
-
-.panel-understated .panel-heading .options .btn-default:focus, .panel-understated .panel-heading .options .btn-default.focus, .panel-understated .card-heading .options .btn-default:focus, .panel-understated .card-heading .options .btn-default.focus, .panel-understated .card-header .options .btn-default:focus, .panel-understated .card-header .options .btn-default.focus, .card-understated .panel-heading .options .btn-default:focus, .card-understated .panel-heading .options .btn-default.focus, .card-understated .card-heading .options .btn-default:focus, .card-understated .card-heading .options .btn-default.focus, .card-understated .card-header .options .btn-default:focus, .card-understated .card-header .options .btn-default.focus {
-  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
-}
-
-.panel-understated .panel-heading .options .btn-default.disabled, .panel-understated .panel-heading .options .btn-default:disabled, .panel-understated .card-heading .options .btn-default.disabled, .panel-understated .card-heading .options .btn-default:disabled, .panel-understated .card-header .options .btn-default.disabled, .panel-understated .card-header .options .btn-default:disabled, .card-understated .panel-heading .options .btn-default.disabled, .card-understated .panel-heading .options .btn-default:disabled, .card-understated .card-heading .options .btn-default.disabled, .card-understated .card-heading .options .btn-default:disabled, .card-understated .card-header .options .btn-default.disabled, .card-understated .card-header .options .btn-default:disabled {
-  color: #212529;
-  background-color: #c1e4ee;
-  border-color: #ddd;
-}
-
-.panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-understated .panel-heading .options .btn-default.dropdown-toggle, .panel-understated .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-understated .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-understated .card-heading .options .btn-default.dropdown-toggle, .panel-understated .card-header .options .btn-default:not(:disabled):not(.disabled):active, .panel-understated .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-understated .card-header .options .btn-default.dropdown-toggle, .card-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-understated .panel-heading .options .btn-default.dropdown-toggle, .card-understated .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-understated .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-understated .card-heading .options .btn-default.dropdown-toggle, .card-understated .card-header .options .btn-default:not(:disabled):not(.disabled):active, .card-understated .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-understated .card-header .options .btn-default.dropdown-toggle {
-  color: #212529;
-  background-color: #99d3e4;
-  border-color: #bdbdbd;
-}
-
-.panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-understated .panel-heading .options .btn-default.dropdown-toggle:focus, .panel-understated .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-understated .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-understated .card-heading .options .btn-default.dropdown-toggle:focus, .panel-understated .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-understated .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-understated .card-header .options .btn-default.dropdown-toggle:focus, .card-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-understated .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-understated .panel-heading .options .btn-default.dropdown-toggle:focus, .card-understated .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-understated .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-understated .card-heading .options .btn-default.dropdown-toggle:focus, .card-understated .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-understated .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-understated .card-header .options .btn-default.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(193, 193, 194, 0.5);
-}
-
-.panel-understated .panel-body, .panel-understated .card-body, .card-understated .panel-body, .card-understated .card-body {
-  background: #fff;
-  color: #333333;
-}
-
-/* Standout Cards */
-.panel-standout, .card-standout {
-  border-color: #ddd;
-}
-
-.panel-standout > .panel-heading, .panel-standout > .card-heading, .card-standout > .panel-heading, .card-standout > .card-heading {
-  color: #fff;
-  background-color: #323A45;
-  border-color: #323A45;
-}
-
-.panel-standout > .panel-heading + .panel-collapse > .panel-body, .panel-standout > .panel-heading + .card-collapse > .card-body, .panel-standout > .card-heading + .panel-collapse > .panel-body, .panel-standout > .card-heading + .card-collapse > .card-body, .card-standout > .panel-heading + .panel-collapse > .panel-body, .card-standout > .panel-heading + .card-collapse > .card-body, .card-standout > .card-heading + .panel-collapse > .panel-body, .card-standout > .card-heading + .card-collapse > .card-body {
-  border-top-color: #ddd;
-}
-
-.panel-standout > .panel-heading .badge, .panel-standout > .card-heading .badge, .card-standout > .panel-heading .badge, .card-standout > .card-heading .badge {
-  color: #323A45;
-  background-color: #fff;
-}
-
-.panel-standout > .panel-footer + .panel-collapse > .panel-body, .panel-standout > .panel-footer + .card-collapse > .card-body, .panel-standout > .card-footer + .panel-collapse > .panel-body, .panel-standout > .card-footer + .card-collapse > .card-body, .card-standout > .panel-footer + .panel-collapse > .panel-body, .card-standout > .panel-footer + .card-collapse > .card-body, .card-standout > .card-footer + .panel-collapse > .panel-body, .card-standout > .card-footer + .card-collapse > .card-body {
-  border-bottom-color: #ddd;
-}
-
-.panel-standout .panel-heading, .panel-standout .card-heading, .panel-standout .card-header, .card-standout .panel-heading, .card-standout .card-heading, .card-standout .card-header {
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-}
-
-.panel-standout .panel-heading h2 span[class^="ca-gov-icon-"], .panel-standout .panel-heading h3 span[class^="ca-gov-icon-"], .panel-standout .panel-heading h4 span[class^="ca-gov-icon-"], .panel-standout .panel-heading h5 span[class^="ca-gov-icon-"], .panel-standout .card-heading h2 span[class^="ca-gov-icon-"], .panel-standout .card-heading h3 span[class^="ca-gov-icon-"], .panel-standout .card-heading h4 span[class^="ca-gov-icon-"], .panel-standout .card-heading h5 span[class^="ca-gov-icon-"], .panel-standout .card-header h2 span[class^="ca-gov-icon-"], .panel-standout .card-header h3 span[class^="ca-gov-icon-"], .panel-standout .card-header h4 span[class^="ca-gov-icon-"], .panel-standout .card-header h5 span[class^="ca-gov-icon-"], .card-standout .panel-heading h2 span[class^="ca-gov-icon-"], .card-standout .panel-heading h3 span[class^="ca-gov-icon-"], .card-standout .panel-heading h4 span[class^="ca-gov-icon-"], .card-standout .panel-heading h5 span[class^="ca-gov-icon-"], .card-standout .card-heading h2 span[class^="ca-gov-icon-"], .card-standout .card-heading h3 span[class^="ca-gov-icon-"], .card-standout .card-heading h4 span[class^="ca-gov-icon-"], .card-standout .card-heading h5 span[class^="ca-gov-icon-"], .card-standout .card-header h2 span[class^="ca-gov-icon-"], .card-standout .card-header h3 span[class^="ca-gov-icon-"], .card-standout .card-header h4 span[class^="ca-gov-icon-"], .card-standout .card-header h5 span[class^="ca-gov-icon-"] {
-  color: #FDB81E;
-}
-
-.panel-standout .panel-heading .options .btn-default, .panel-standout .card-heading .options .btn-default, .panel-standout .card-header .options .btn-default, .card-standout .panel-heading .options .btn-default, .card-standout .card-heading .options .btn-default, .card-standout .card-header .options .btn-default {
-  color: #fff;
-  background-color: #21262d;
-  border-color: #272e36;
-}
-
-.panel-standout .panel-heading .options .btn-default:hover, .panel-standout .card-heading .options .btn-default:hover, .panel-standout .card-header .options .btn-default:hover, .card-standout .panel-heading .options .btn-default:hover, .card-standout .card-heading .options .btn-default:hover, .card-standout .card-header .options .btn-default:hover {
-  color: #fff;
-  background-color: #111317;
-  border-color: #121519;
-}
-
-.panel-standout .panel-heading .options .btn-default:focus, .panel-standout .panel-heading .options .btn-default.focus, .panel-standout .card-heading .options .btn-default:focus, .panel-standout .card-heading .options .btn-default.focus, .panel-standout .card-header .options .btn-default:focus, .panel-standout .card-header .options .btn-default.focus, .card-standout .panel-heading .options .btn-default:focus, .card-standout .panel-heading .options .btn-default.focus, .card-standout .card-heading .options .btn-default:focus, .card-standout .card-heading .options .btn-default.focus, .card-standout .card-header .options .btn-default:focus, .card-standout .card-header .options .btn-default.focus {
-  box-shadow: 0 0 0 0.2rem rgba(72, 77, 84, 0.5);
-}
-
-.panel-standout .panel-heading .options .btn-default.disabled, .panel-standout .panel-heading .options .btn-default:disabled, .panel-standout .card-heading .options .btn-default.disabled, .panel-standout .card-heading .options .btn-default:disabled, .panel-standout .card-header .options .btn-default.disabled, .panel-standout .card-header .options .btn-default:disabled, .card-standout .panel-heading .options .btn-default.disabled, .card-standout .panel-heading .options .btn-default:disabled, .card-standout .card-heading .options .btn-default.disabled, .card-standout .card-heading .options .btn-default:disabled, .card-standout .card-header .options .btn-default.disabled, .card-standout .card-header .options .btn-default:disabled {
-  color: #fff;
-  background-color: #21262d;
-  border-color: #272e36;
-}
-
-.panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-standout .panel-heading .options .btn-default.dropdown-toggle, .panel-standout .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .panel-standout .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-standout .card-heading .options .btn-default.dropdown-toggle, .panel-standout .card-header .options .btn-default:not(:disabled):not(.disabled):active, .panel-standout .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .panel-standout .card-header .options .btn-default.dropdown-toggle, .card-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-standout .panel-heading .options .btn-default.dropdown-toggle, .card-standout .card-heading .options .btn-default:not(:disabled):not(.disabled):active, .card-standout .card-heading .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-standout .card-heading .options .btn-default.dropdown-toggle, .card-standout .card-header .options .btn-default:not(:disabled):not(.disabled):active, .card-standout .card-header .options .btn-default:not(:disabled):not(.disabled).active,
-.show > .card-standout .card-header .options .btn-default.dropdown-toggle {
-  color: #fff;
-  background-color: #0b0d10;
-  border-color: #0d0f11;
-}
-
-.panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-standout .panel-heading .options .btn-default.dropdown-toggle:focus, .panel-standout .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-standout .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-standout .card-heading .options .btn-default.dropdown-toggle:focus, .panel-standout .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .panel-standout .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .panel-standout .card-header .options .btn-default.dropdown-toggle:focus, .card-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-standout .panel-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-standout .panel-heading .options .btn-default.dropdown-toggle:focus, .card-standout .card-heading .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-standout .card-heading .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-standout .card-heading .options .btn-default.dropdown-toggle:focus, .card-standout .card-header .options .btn-default:not(:disabled):not(.disabled):active:focus, .card-standout .card-header .options .btn-default:not(:disabled):not(.disabled).active:focus,
-.show > .card-standout .card-header .options .btn-default.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(72, 77, 84, 0.5);
-}
-
-.panel-standout .panel-body, .panel-standout .card-body, .card-standout .panel-body, .card-standout .card-body {
-  background: #fff;
-  color: #333333;
-}
-
-.panel-standout .panel-body a:not(.btn), .panel-standout .card-body a:not(.btn), .card-standout .panel-body a:not(.btn), .card-standout .card-body a:not(.btn) {
-  color: #046B99;
-  text-decoration: none;
-}
-
-.panel-standout .panel-body a:not(.btn):hover, .panel-standout .panel-body a:not(.btn):focus, .panel-standout .card-body a:not(.btn):hover, .panel-standout .card-body a:not(.btn):focus, .card-standout .panel-body a:not(.btn):hover, .card-standout .panel-body a:not(.btn):focus, .card-standout .card-body a:not(.btn):hover, .card-standout .card-body a:not(.btn):focus {
-  color: #02374e;
-  text-decoration: underline;
-}
-
-.panel-standout .panel-body a:not(.btn):focus, .panel-standout .card-body a:not(.btn):focus, .card-standout .panel-body a:not(.btn):focus, .card-standout .card-body a:not(.btn):focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-.panel-standout .panel-body a:not(.btn), .panel-standout .card-body a:not(.btn), .card-standout .panel-body a:not(.btn), .card-standout .card-body a:not(.btn) {
-  background-image: linear-gradient(to right, #046B99 50%, transparent 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 1px;
-  background-position: center bottom 4%;
-  background-origin: padding-box;
-  text-decoration: none !important;
-}
-
-.panel-standout .panel-body a:not(.btn):hover, .panel-standout .card-body a:not(.btn):hover, .card-standout .panel-body a:not(.btn):hover, .card-standout .card-body a:not(.btn):hover {
-  background-image: linear-gradient(to right, #02374e 50%, transparent 50%);
-  text-decoration: none !important;
-}
-
-/* Adds triangle to card */
-.panel-standout.highlight .panel-heading .triangle, .panel-standout.highlight .card-heading .triangle, .panel-standout.highlight .card-header .triangle, .card-standout.highlight .panel-heading .triangle, .card-standout.highlight .card-heading .triangle, .card-standout.highlight .card-header .triangle {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #323A45;
 }
 
 /* -----------------------------------------
@@ -2292,32 +2391,6 @@ a.text-white:not(.btn):hover {
   color: #fff !important;
 }
 
-.btn-outline-primary {
-  color: #046B99;
-  background-color: #fff;
-  border-color: #046B99;
-}
-
-.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary .show > .dropdown-toggle, .open > .dropdown-toggle .btn-outline-primary {
-  color: #fff;
-  background-color: #046B99;
-  border-color: #035376;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .open > .dropdown-toggle .btn-outline-primary {
-  background-image: none;
-}
-
-.btn-outline-primary.disabled, .btn-outline-primary.disabled:hover, .btn-outline-primary.disabled:focus, .btn-outline-primary.disabled:active, .btn-outline-primary.disabled.active, .btn-outline-primary[disabled], .btn-outline-primary[disabled]:hover, .btn-outline-primary[disabled]:focus, .btn-outline-primary[disabled]:active, .btn-outline-primary[disabled].active, fieldset[disabled] .btn-outline-primary, fieldset[disabled] .btn-outline-primary:hover, fieldset[disabled] .btn-outline-primary:focus, fieldset[disabled] .btn-outline-primary:active, fieldset[disabled] .btn-outline-primary.active {
-  background-color: #fff !important;
-  border-color: #046B99;
-}
-
-.btn-outline-primary .badge {
-  color: #fff;
-  background-color: #046B99;
-}
-
 .btn-default {
   color: #000;
   background-color: rgba(255, 255, 255, 0.65);
@@ -2378,40 +2451,14 @@ a.text-white:not(.btn):hover {
   color: #fff !important;
 }
 
-.btn-outline-standout {
-  color: #323A45;
-  background-color: #fff;
-  border-color: #323A45;
-}
-
-.btn-outline-standout:hover, .btn-outline-standout:focus, .btn-outline-standout:not(:disabled):not(.disabled):active, .btn-outline-standout:not(:disabled):not(.disabled).active, .btn-outline-standout .show > .dropdown-toggle, .open > .dropdown-toggle .btn-outline-standout {
-  color: #fff;
-  background-color: #323A45;
-  border-color: #232930;
-}
-
-.btn-outline-standout:not(:disabled):not(.disabled):active, .btn-outline-standout:not(:disabled):not(.disabled).active, .open > .dropdown-toggle .btn-outline-standout {
-  background-image: none;
-}
-
-.btn-outline-standout.disabled, .btn-outline-standout.disabled:hover, .btn-outline-standout.disabled:focus, .btn-outline-standout.disabled:active, .btn-outline-standout.disabled.active, .btn-outline-standout[disabled], .btn-outline-standout[disabled]:hover, .btn-outline-standout[disabled]:focus, .btn-outline-standout[disabled]:active, .btn-outline-standout[disabled].active, fieldset[disabled] .btn-outline-standout, fieldset[disabled] .btn-outline-standout:hover, fieldset[disabled] .btn-outline-standout:focus, fieldset[disabled] .btn-outline-standout:active, fieldset[disabled] .btn-outline-standout.active {
-  background-color: #fff !important;
-  border-color: #323A45;
-}
-
-.btn-outline-standout .badge {
-  color: #fff;
-  background-color: #323A45;
-}
-
 .btn-highlight {
-  color: #222222;
+  color: #000;
   background-color: #FDB81E;
   border-color: #FDB81E;
 }
 
 .btn-highlight:hover, .btn-highlight:focus, .btn-highlight:not(:disabled):not(.disabled):active, .btn-highlight:not(:disabled):not(.disabled).active, .btn-highlight .show > .dropdown-toggle, .open > .dropdown-toggle .btn-highlight {
-  color: #222222;
+  color: #000;
   background-color: #f5aa02;
   border-color: #f5aa02;
 }
@@ -2427,37 +2474,7 @@ a.text-white:not(.btn):hover {
 
 .btn-highlight .badge {
   color: #FDB81E;
-  background-color: #222222;
-}
-
-.btn-outline-highlight {
-  color: #333333;
-  background-color: #fff;
-  border-color: #FDB81E;
-}
-
-.btn-outline-highlight:hover, .btn-outline-highlight:focus, .btn-outline-highlight:not(:disabled):not(.disabled):active, .btn-outline-highlight:not(:disabled):not(.disabled).active, .btn-outline-highlight .show > .dropdown-toggle, .open > .dropdown-toggle .btn-outline-highlight {
-  color: #333333;
-  background-color: #FDB81E;
-  border-color: #f5aa02;
-}
-
-.btn-outline-highlight:not(:disabled):not(.disabled):active, .btn-outline-highlight:not(:disabled):not(.disabled).active, .open > .dropdown-toggle .btn-outline-highlight {
-  background-image: none;
-}
-
-.btn-outline-highlight.disabled, .btn-outline-highlight.disabled:hover, .btn-outline-highlight.disabled:focus, .btn-outline-highlight.disabled:active, .btn-outline-highlight.disabled.active, .btn-outline-highlight[disabled], .btn-outline-highlight[disabled]:hover, .btn-outline-highlight[disabled]:focus, .btn-outline-highlight[disabled]:active, .btn-outline-highlight[disabled].active, fieldset[disabled] .btn-outline-highlight, fieldset[disabled] .btn-outline-highlight:hover, fieldset[disabled] .btn-outline-highlight:focus, fieldset[disabled] .btn-outline-highlight:active, fieldset[disabled] .btn-outline-highlight.active {
-  background-color: #fff !important;
-  border-color: #FDB81E;
-}
-
-.btn-outline-highlight .badge {
-  color: #fff;
-  background-color: #333333;
-}
-
-.btn-outline-highlight.active {
-  color: #333333;
+  background-color: #000;
 }
 
 .btn-secondary {
@@ -2500,32 +2517,6 @@ a.text-white:not(.btn):hover {
   color: #000;
 }
 
-.btn-outline-secondary {
-  color: #555555;
-  background-color: #fff;
-  border-color: #555555;
-}
-
-.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary .show > .dropdown-toggle, .open > .dropdown-toggle .btn-outline-secondary {
-  color: #fff;
-  background-color: #555555;
-  border-color: #444444;
-}
-
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .open > .dropdown-toggle .btn-outline-secondary {
-  background-image: none;
-}
-
-.btn-outline-secondary.disabled, .btn-outline-secondary.disabled:hover, .btn-outline-secondary.disabled:focus, .btn-outline-secondary.disabled:active, .btn-outline-secondary.disabled.active, .btn-outline-secondary[disabled], .btn-outline-secondary[disabled]:hover, .btn-outline-secondary[disabled]:focus, .btn-outline-secondary[disabled]:active, .btn-outline-secondary[disabled].active, fieldset[disabled] .btn-outline-secondary, fieldset[disabled] .btn-outline-secondary:hover, fieldset[disabled] .btn-outline-secondary:focus, fieldset[disabled] .btn-outline-secondary:active, fieldset[disabled] .btn-outline-secondary.active {
-  background-color: #fff !important;
-  border-color: #555555;
-}
-
-.btn-outline-secondary .badge {
-  color: #fff;
-  background-color: #555555;
-}
-
 .check-icon-radio {
   color: #046B99;
   border-color: #046B99;
@@ -2563,7 +2554,7 @@ input[type="radio"]:checked + * i {
 }
 
 .icon-link:hover, .icon-link:focus {
-  color: #E1F2F7 !important;
+  color: #FDB81E !important;
 }
 
 .service-tile-empty {
@@ -2587,70 +2578,6 @@ input[type="radio"]:checked + * i {
   background-position: center bottom 4%;
   background-origin: padding-box;
   text-decoration: none !important;
-}
-
-/* -----------------------------------------
-   PANES
-   /source/scss/cagov/cs-panes.scss
------------------------------------------ */
-@media (min-width: 768px) {
-  .bg-highlight.group-right:before, .bg-p1.group-right:before {
-    border-right-color: #FDB81E;
-  }
-  .bg-highlight.group-left:after, .bg-p1.group-left:after {
-    border-left-color: #FDB81E;
-  }
-  .section-primary.group-right:before, .bg-primary.group-right:before, .bg-p2.group-right:before {
-    border-right-color: #046B99;
-  }
-  .section-primary.group-left:after, .bg-primary.group-left:after, .bg-p2.group-left:after {
-    border-left-color: #046B99;
-  }
-  .section-default.group-right:before {
-    border-right-color: whitesmoke;
-  }
-  .section-default.group-left:after {
-    border-left-color: whitesmoke;
-  }
-  .section-standout.group-right:before, .bg-standout.group-right:before, .bg-p3.group-right:before {
-    border-right-color: #323A45;
-  }
-  .section-standout.group-left:after, .bg-standout.group-left:after, .bg-p3.group-left:after {
-    border-left-color: #323A45;
-  }
-  .section-understated.group-right:before, .bg-s1.group-right:before {
-    border-right-color: #E1F2F7;
-  }
-  .section-understated.group-left:after, .bg-s1.group-left:after {
-    border-left-color: #E1F2F7;
-  }
-  .section-inverted.group-right:before {
-    border-right-color: #222222;
-  }
-  .section-inverted.group-left:after {
-    border-left-color: #222222;
-  }
-}
-
-@media (max-width: 767px) {
-  .bg-highlight.group-right:before, .bg-p1.group-right:before, .bg-highlight.group-left:after, .bg-p1.group-left:after {
-    border-bottom-color: #FDB81E;
-  }
-  .section-primary.group-right:before, .bg-primary.group-right:before, .bg-p2.group-right:before, .section-primary.group-left:after, .bg-primary.group-left:after, .bg-p2.group-left:after {
-    border-bottom-color: #046B99;
-  }
-  .section-default.group-right:before, .section-default.group-left:after {
-    border-bottom-color: whitesmoke;
-  }
-  .section-standout.group-right:before, .bg-standout.group-right:before, .bg-p3.group-right:before, .section-standout.group-left:after, .bg-standout.group-left:after, .bg-p3.group-left:after {
-    border-bottom-color: #323A45;
-  }
-  .section-understated.group-right:before, .bg-s1 .group-right:before, .section-understated.group-left:after, .bg-s1.group-left:after {
-    border-bottom-color: #E1F2F7;
-  }
-  .section-inverted.group-right:before, .section-inverted.group-left:after {
-    border-bottom-color: #222222;
-  }
 }
 
 /* -----------------------------------------

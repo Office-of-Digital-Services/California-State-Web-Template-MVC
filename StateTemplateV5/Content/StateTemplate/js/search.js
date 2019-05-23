@@ -36,6 +36,7 @@ _gaq.push(['b._trackPageview']);
         var $searchText = $searchContainer.find(".gsc-input");
         var $resultsContainer = $('.search-results-container');
         var $body = $("body");
+        
 
         $searchText.on("click", function () {
             addSearchResults();
@@ -53,7 +54,7 @@ _gaq.push(['b._trackPageview']);
         //	$('.gsc-search-button').innerHTML
 
         $('.top-level-nav .nav-item .ca-gov-icon-search, #nav-item-search').parents('.nav-item').on('click', function (e) {
-            $searchText.focus().trigger('focus');
+            $searchText.focus().trigger('focus')
 
             // let the user know the input box is where they should search
             $(".primary #head-search").addClass('play-animation').one(

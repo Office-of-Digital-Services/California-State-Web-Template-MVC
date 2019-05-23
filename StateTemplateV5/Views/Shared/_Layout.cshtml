@@ -61,24 +61,10 @@
 <body>
     <header role="banner" id="header" class="global-header fixed">
         <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
-        <!-- Location Bar -->
-        <div class="location-settings section section-standout collapse collapsed " id="locationSettings">
-            <div class="container p-y">
-                <button type="button" class="close" data-toggle="collapse" data-target="#locationSettings" aria-expanded="false" aria-controls="locationSettings" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="form-group form-inline">
-                    <label for="locationZipCode">Saving your location allows us to provide you with more relevant information.</label>
-                    <input type="input" class="form-control" id="locationZipCode" placeholder="Zip Code">
-                    <button type="button" class="btn btn-primary">Set Location</button>
-                </div>
-            </div>
-        </div>
+
 
 
         <!-- Utility Header -->
-
-
         <div class="utility-header">
             <div class="container">
                 <div class="group flex-row">
@@ -101,7 +87,7 @@
         <!--  Settings Bar -->
         <div class="site-settings section section-standout collapse collapsed" role="alert" id="siteSettings">
             <div class="container  p-y">
-                <button type="button" class="close" data-toggle="collapse" data-target="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
 
                 <div class="btn-group btn-group-justified-sm" role="group" aria-label="contrastMode">
                     <div class="btn-group"><button type="button" class="btn btn-standout disableHighContrastMode">Default</button></div>
@@ -113,6 +99,7 @@
                     <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <span class="sr-only">Increase</span><span class="ca-gov-icon-plus-line font-size-sm" aria-hidden="true"></span></span></button></div>
                     <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <span class="sr-only">Decrease</span><span class="ca-gov-icon-minus-line font-size-sm" aria-hidden="true"></span></span></button></div>
                 </div>
+                <button type="button" class="close" data-toggle="collapse" data-target="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
         </div>
 
@@ -151,9 +138,6 @@
             <!-- Top Level Navigation Only -->
             <nav id="navigation" class="main-navigation singlelevelnav">
                 <ul id="nav_list" class="top-level-nav">
-                    <li class="home-link nav-item">
-                        <a href="/" class="first-level-link"><span id="nav_home_container" class="ca-gov-icon-home" aria-hidden="true"></span>Home</a>
-                    </li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active nav-item" : "nav-item")">
                         <a href="@Url.Action("About", "Home")" class="first-level-link"><span class="ca-gov-icon-info-bubble" aria-hidden="true"></span>About</a>
                     </li>
@@ -190,9 +174,9 @@
                 <div class="container">
                     <form id="Search" class="pos-rel" action="@Url.Action("serp", "Home")">
                         <span class="sr-only" id="SearchInput">Custom Google Search</span>
-                        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Custom Search" class="height-50 border-0 p-x-sm w-100" />
-                        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
-                        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
+                        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Search This Website" class="height-50 border-0 p-x-sm w-100" tabindex="-1" />
+                        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent"  tabindex="-1"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
+                        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset"  tabindex="-1"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
                     </form>
                 </div>
             </div>
