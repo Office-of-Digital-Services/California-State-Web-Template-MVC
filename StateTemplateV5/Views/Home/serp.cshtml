@@ -56,7 +56,7 @@
 
             return (results !== null) ? results[1] || 0 : "";
         }
-        var query = jQuery.urlParam('q');
+        var query = decodeURIComponent($.urlParam('q').replace(/\+/g, " "));
         $('input[name=q]').val(query);
 </script>
 
