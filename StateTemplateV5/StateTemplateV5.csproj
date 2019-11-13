@@ -190,6 +190,7 @@
     <Content Include="Content\StateTemplate\js\libs\jquery-3.2.1.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-migrate-3.0.1.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery-migrate.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.min.js" />
     <Content Include="Content\StateTemplate\js\libs\Plotly.js" />

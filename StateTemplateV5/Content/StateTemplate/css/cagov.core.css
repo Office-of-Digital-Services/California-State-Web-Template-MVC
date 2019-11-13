@@ -1,5 +1,5 @@
 /**
- * CA State Template v5 -  @version v5.0.11 -  9/6/2019 
+ * CA State Template v5 -  @version v5.0.12 -  11/13/2019 
   STYLES COMPILED FROM SOURCE (SCSS) DO NOT MODIFY */
 /* -----------------------------------------
    BOOTSTRAP v4.3.1 - /source/scss/bootstrap/ 
@@ -9391,14 +9391,6 @@ ul.et-fb-font-icon-list li:after {
   speak: none;
 }
 
-li[class^="et_pb_ca"]::before,
-li[class^="et_pb_profile_banner"]::before,
-li[class^="et_fb_ca"]::before,
-li[class^="et_fb_profile_banner"]::before {
-  font-family: 'CaGov' !important;
-  content: '\e90b' !important;
-}
-
 .ca-gov-icon-collapse-all:before {
   content: "\e970";
 }
@@ -11695,8 +11687,8 @@ code {
 }
 
 .header-cagov-logo img {
-  top: 4px;
-  height: 32px;
+  top: 2px;
+  height: 34px;
   position: absolute;
 }
 
@@ -13589,9 +13581,7 @@ a.second-level-link [class^="ca-gov-icon-"] {
    /source/scss/cagov/nav-mobile-controls.scss
 ----------------------------------------- */
 .mobile-controls {
-  font-size: 40px;
-  font-size: 2.5rem;
-  padding: .2em;
+  padding: 5px;
   cursor: pointer;
   text-align: right;
   position: relative;
@@ -13638,8 +13628,8 @@ a.second-level-link [class^="ca-gov-icon-"] {
 }
 
 .mobile-controls .ca-gov-icon-menu-toggle-open, .mobile-controls .ca-gov-icon-menu-toggle-closed {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 16px;
+  padding-right: 16px;
   line-height: 44px;
 }
 
@@ -13652,9 +13642,13 @@ a.second-level-link [class^="ca-gov-icon-"] {
 .mobile-controls .toggle-search {
   padding: 0;
   width: 52px;
+  font-size: 40px;
   border: none;
   background: none;
   cursor: pointer;
+  position: relative;
+  top: -8px;
+  text-align: right;
 }
 
 .mobile-controls .toggle-search:focus {
@@ -14765,7 +14759,7 @@ body {
   opacity: 0;
   visibility: hidden;
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   font-size: 30px;
   text-align: center;
   text-decoration: none;
