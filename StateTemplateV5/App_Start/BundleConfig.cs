@@ -8,9 +8,7 @@ namespace StateTemplateV5
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/stateTemplateLibJs").Include(
-                     "~/Content/StateTemplate/js/libs/jquery.min.js",
-                     "~/Content/StateTemplate/js/libs/jquery-migrate.min.js"));
+            
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
                      "~/Content/StateTemplate/js/cagov.core.min.js",

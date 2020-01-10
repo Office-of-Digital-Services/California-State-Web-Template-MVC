@@ -9,7 +9,7 @@
 <head>
     <!--
         California State Template
-        Version 5.0.14
+        Version 5.5.11
 
         Based on Twitter Bootstrap
     -->
@@ -20,16 +20,40 @@
     <meta name="Keywords" content="California, government" />
     <!-- Use highest compatibility mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- http://t.co/dKP3o1e -->
     <meta name="HandheldFriendly" content="True">
     <!-- for Blackberry, AvantGo -->
     <meta name="MobileOptimized" content="320">
     <!-- for Windows mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600|Source+Sans+Pro:400,700" rel="stylesheet">
+
+
     @Styles.Render("~/Content/stateTemplateCss")
-    @Scripts.Render("~/bundles/stateTemplateLibJs")
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script>
+        //Fall back to local copy if no jquery found
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='~/Content/StateTemplate/js/libs/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <!-- Load jQuery migrate from CDN with fallback to local copy -->
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <script>
+        //Fall back to local copy if no jQuery migrate found
+        if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+            document.write(unescape("%3Cscript src='~/Content/StateTemplate/js/libs/jquery-migrate.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+
+    </script>
+
+
     <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
     <!--[if (lt IE 9) & (!IEMobile)]>
     <script src="~/Content/StateTemplate/js/libs/selectivizr-min.js"></script>
@@ -115,11 +139,11 @@
             <span class="mobile-control-group mobile-header-icons">
                 <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
             </span>
-            <div class="mobile-control-group main-nav-icons float-right">
-                <button class="mobile-control toggle-search float-left m-l">
+            <div class="mobile-control-group main-nav-icons">
+                <button class="mobile-control toggle-search">
                     <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
                 </button>
-                <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="navigation">
+                <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="navigation" data-toggle="collapse" data-target="#navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -155,7 +179,7 @@
                         <a href="@Url.Action("Contact", "Home")" class="first-level-link"><span class="ca-gov-icon-lightbulb" aria-hidden="true"></span>Contact Us</a>
                     </li>
                     <li class="nav-item" id="nav-item-search">
-                        <a href="javascript:;" class="first-level-link" aria-label="Search Button"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+                        <button class="first-level-link"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</button>
                     </li>
                 </ul>
             </nav>
