@@ -11,12 +11,12 @@ namespace StateTemplateV5
             
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
-                     "~/Content/StateTemplate/js/cagov.core.min.js",
-                     "~/Content/StateTemplate/js/search.js"));
+                     "~/js/cagov.core.min.js",
+                     "~/js/search.js"));
 
             bundles.Add(new StyleBundle("~/Content/stateTemplateCss").Include(
-                      "~/Content/StateTemplate/css/cagov.core.min.css",
-                      "~/Content/StateTemplate/css/colorscheme-oceanside.min.css",
+                      "~/css/cagov.core.min.css",
+                      "~/css/colorscheme-oceanside.min.css",
                       "~/Content/site.css"));
         }
     }

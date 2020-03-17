@@ -9,7 +9,7 @@
 <head>
     <!--
         California State Template
-        Version 5.5.12
+        Version 5.5.13
 
         Based on Twitter Bootstrap
     -->
@@ -40,15 +40,15 @@
     <script>
         //Fall back to local copy if no jquery found
         if (typeof jQuery == 'undefined') {
-            document.write(unescape("%3Cscript src='~/Content/StateTemplate/js/libs/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='~/js/libs/jquery.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
     <!-- Load jQuery migrate from CDN with fallback to local copy -->
-    <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
     <script>
         //Fall back to local copy if no jQuery migrate found
         if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
-            document.write(unescape("%3Cscript src='~/Content/StateTemplate/js/libs/jquery-migrate.min.js' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='~/js/libs/jquery-migrate.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
 
     </script>
@@ -58,20 +58,20 @@
     <!--[if (lt IE 9) & (!IEMobile)]>
     <script src="~/Content/StateTemplate/js/libs/selectivizr-min.js"></script>
     <![endif]-->
-    <link rel="apple-touch-icon-precomposed" sizes="100x100" href="~/Content/StateTemplate/images/apple-touch-icon-precomposed.png">
-    <link rel="icon" sizes="192x192" href="~/Content/StateTemplate/images/apple-touch-icon-192x192.png">
-    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="~/Content/StateTemplate/images/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="~/Content/StateTemplate/images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/StateTemplate/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="~/Content/StateTemplate/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/StateTemplate/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/StateTemplate/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" href="~/Content/StateTemplate/images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" href="~/Content/StateTemplate/images/apple-touch-icon.png">
-    <link rel="shortcut icon" href="~/Content/StateTemplate/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="100x100" href="~/images/apple-touch-icon-precomposed.png">
+    <link rel="icon" sizes="192x192" href="~/images/apple-touch-icon-192x192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="~/images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="~/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="~/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="~/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="~/images/apple-touch-icon-57x57.png">
 
     <!-- For everything else -->
-    <link rel="shortcut icon" href="~/Content/StateTemplate/favicon.ico">
+    <link rel="shortcut icon" href="~/Content/favicon.ico">
     <!-- Activate ClearType for Mobile IE -->
     <!--[if IE]>
     <meta http-equiv="cleartype" content="on">
@@ -93,7 +93,7 @@
             <div class="container">
                 <div class="group flex-row">
                     <div class="social-media-links">
-                        <div class="header-cagov-logo"><a href="https://ca.gov"><span class="sr-only">CA.gov</span><img src="/Content/stateTemplate/images/Ca-Gov-Logo-Gold.svg" class="pos-rel" alt="" aria-hidden="true" /></a></div>
+                        <div class="header-cagov-logo"><a href="https://ca.gov"><span class="sr-only">CA.gov</span><img src="/images/Ca-Gov-Logo-Gold.svg" class="pos-rel" alt="" aria-hidden="true" /></a></div>
                         <a href="/" class="ca-gov-icon-home"><span class="sr-only">Home</span></a>
                         <a href="/" class="ca-gov-icon-facebook"><span class="sr-only">Facebook</span></a>
                         <a href="/" class="ca-gov-icon-twitter"><span class="sr-only">Twitter</span></a>
@@ -130,7 +130,7 @@
 
         <!-- Branding -->
         <div class="branding">
-            <div class="header-organization-banner"><a href="/"><img src="/Content/stateTemplate/images/template-logo.png" alt="State of California Website Template logo" /></a></div>
+            <div class="header-organization-banner"><a href="/"><img src="/images/template-logo.png" alt="State of California Website Template logo" /></a></div>
         </div>
 
 

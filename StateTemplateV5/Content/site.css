@@ -7,7 +7,7 @@
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('StateTemplate/images/background-primary.jpg');
+    background-image: url('/images/background-primary.jpg');
     background-size: cover;
 }
 .home-logo {
