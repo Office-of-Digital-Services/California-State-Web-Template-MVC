@@ -11,7 +11,7 @@ namespace StateTemplateV5
             
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
-                     "~/js/cagov.core.min.js",
+                     "~/js/cagov.core.js",
                      "~/js/search.js"));
 
             bundles.Add(new StyleBundle("~/Content/stateTemplateCss").Include(

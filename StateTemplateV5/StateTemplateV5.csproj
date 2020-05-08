@@ -198,7 +198,6 @@
     <Content Include="js\libs\icon-fonts-ie7.js" />
     <Content Include="js\libs\jquery-migrate.min.js" />
     <Content Include="js\libs\jquery.js" />
-    <Content Include="js\libs\jquery.min.js" />
     <Content Include="js\libs\Plotly.js" />
     <Content Include="js\libs\respond.min.js" />
     <Content Include="js\libs\selectivizr-min.js" />
