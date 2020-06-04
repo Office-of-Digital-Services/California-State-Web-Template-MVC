@@ -135,6 +135,8 @@
     <Content Include="css\cagov.core.min.css" />
     <Content Include="css\cagov.font-only.css" />
     <Content Include="css\cagov.font-only.min.css" />
+    <Content Include="css\colorscheme-delta.css" />
+    <Content Include="css\colorscheme-delta.min.css" />
     <Content Include="css\colorscheme-eureka.css" />
     <Content Include="css\colorscheme-eureka.min.css" />
     <Content Include="css\colorscheme-mono.css" />
@@ -149,6 +151,10 @@
     <Content Include="css\colorscheme-sacramento.min.css" />
     <Content Include="css\colorscheme-santabarbara.css" />
     <Content Include="css\colorscheme-santabarbara.min.css" />
+    <Content Include="css\colorscheme-santacruz.css" />
+    <Content Include="css\colorscheme-santacruz.min.css" />
+    <Content Include="css\colorscheme-shasta.css" />
+    <Content Include="css\colorscheme-shasta.min.css" />
     <Content Include="css\colorscheme-sierra.css" />
     <Content Include="css\colorscheme-sierra.min.css" />
     <Content Include="css\colorscheme-trinity.css" />
