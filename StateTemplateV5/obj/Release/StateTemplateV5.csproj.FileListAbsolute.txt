@@ -35,8 +35,8 @@ C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\bin\System.Web.WebPages.Razor.xml
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\bin\Antlr3.Runtime.pdb
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\bin\Newtonsoft.Json.xml
-C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\obj\Release\StateTemplateV5.csprojAssemblyReference.cache
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\obj\Release\StateTemplateV5.csproj.CoreCompileInputs.cache
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\obj\Release\StateTemplateV5.csproj.CopyComplete
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\obj\Release\StateTemplateV5Beta.dll
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\obj\Release\StateTemplateV5Beta.pdb
+C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-MVC-v5\StateTemplateV5\obj\Release\StateTemplateV5.csproj.AssemblyReference.cache
